@@ -1,1 +1,1 @@
-# chanin.tech
+# Richards' Personal Website
