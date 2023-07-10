@@ -1,17 +1,8 @@
 ---
-title: "3D Modelling"
-date: 2022-04-09T23:15:00+07:00
-slug: 3D Modelling
-category:
-summary:
-description:
-cover:
-  image:
-  alt:
-  caption:
-  relative: true
+title: "3D Model Gallery"
+date: 2020-08-10T20:39:13+02:00
 showtoc: false
+hidemeta: true
 draft: false
 ---
-
-3D modelling
+{{< gallery match="models/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="350" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
