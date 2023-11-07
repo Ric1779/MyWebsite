@@ -5,4 +5,4 @@ showtoc: false
 hidemeta: true
 draft: false
 ---
-{{< gallery match="images/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="350" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
+{{< gallery match="images/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="360" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}

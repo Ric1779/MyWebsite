@@ -1,5 +1,5 @@
 ---
-title: "Epipolar Geometry in Computer Vision"
+title: "Computer Vision: Epipolar Geometry"
 date: 2023-04-08T23:15:00+07:00
 slug: epipolar-geometry
 category: computer-vision
@@ -7,7 +7,7 @@ author: "Richards Britto"
 summary:
 description: 
 cover:
-  image:
+  image: "covers/camera_3.png"
   alt:
   caption: 
   relative: true
