@@ -56,7 +56,7 @@ The C++ code snippet demonstrates the generation of the first PPM image. This co
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="/images/first-ppm-image.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/first-ppm-image.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
 </p>
 <p align="center">
   <em>Figure 1: First PPM Image</em>
