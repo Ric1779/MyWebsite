@@ -6,7 +6,7 @@ category: projects
 summary:
 description:
 cover:
-  image: "covers/final_render.png"
+  image: "/covers/final_render.png"
   alt:
   caption:
   relative: true
