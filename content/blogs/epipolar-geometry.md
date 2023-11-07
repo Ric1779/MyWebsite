@@ -17,8 +17,7 @@ draft: false
 
 ## Introduction
 
- The geometry involved in two perspective views. These views can be obtained either simultaneously, such as with a stereo rig, or sequentially, where a camera moves in relation to the scene. From a geometric standpoint, these two situations are equivalent. 
-
+ The geometry involved in two perspective views. These views can be obtained either simultaneously, such as with a stereo rig, or sequentially, where a camera moves in relation to the scene. From a geometric standpoint, these two situations are equivalent.
 
 Computer vision, a field at the intersection of computer science and image processing, has made remarkable strides in recent years, enabling machines to perceive and understand visual information. One fundamental challenge in computer vision is extracting depth information from 2D images. Accurately estimating the 3D structure and spatial relationships of objects in a scene is crucial for applications such as autonomous navigation, augmented reality, object recognition, and robotics.
 
@@ -43,6 +42,27 @@ Mathjax block:
 {{< /mathjax/block >}}
 
 Inline shortcode {{< mathjax/inline >}}\(a \ne 0\){{< /mathjax/inline>}} with Mathjax.
+
+$$
+\begin{tikzpicture}
+  % Define the matrix
+  \matrix (J) [matrix of nodes, nodes in empty cells,
+               row sep=0.5cm, column sep=0.5cm,
+               nodes={draw, fill=cyan, fill opacity=0.5, text opacity=1, text width=2.5cm, text centered},
+               row 1/.style={nodes={draw=none, fill=none}},
+               column 1/.style={nodes={draw=none, fill=none}},
+               ] {
+    & Camera 1 & 0\_1x3 \\
+    Camera 1 & & 0\_1x3 \\
+  };
+  
+  % Add arrows or labels if needed
+  \node[above=0.3cm of J-1-2] {Element 1};
+  \node[above=0.3cm of J-1-3] {Element 2};
+  \node[left=0.5cm of J-2-1] {Element 3};
+  \node[left=0.5cm of J-1-1] {Element 4};
+\end{tikzpicture}
+$$
 
 ## The essential Streamlit for all your data science needs
 
