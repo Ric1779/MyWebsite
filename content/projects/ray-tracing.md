@@ -56,7 +56,7 @@ The C++ code snippet demonstrates the generation of the first PPM image. This co
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/first-ppm-image.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/first-ppm-image.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 1: First PPM Image</em>
@@ -81,7 +81,7 @@ Furthermore, the tutorial delved into the concept of the viewport—a virtual 2D
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/blue-to-white.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/blue-to-white.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 2: A blue-to-white gradient depending on ray Y coordinate</em>
@@ -103,7 +103,7 @@ color = 0.5*color(N.x()+1, N.y()+1, N.z()+1);
  As the tutorial iterates through these steps, concentrating on visualizing the normals at the closest hit point for the single sphere within the scene, the significance of these preliminary renderings sets the stage for future refinements in simulating more intricate lighting effects and material interactions within the ray tracer.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/normals-sphere.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/normals-sphere.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 3: A sphere colored according to its normals</em>
@@ -114,7 +114,7 @@ color = 0.5*color(N.x()+1, N.y()+1, N.z()+1);
 In the pursuit of enhancing the visual quality of rendered images, the tutorial introduces the concept of antialiasing to mitigate the jagged or "stair-stepping" effect visible along edges. Addressing this aliasing issue is essential in creating more realistic images, emulating how a true image of the world, unlike computer-generated images, maintains a continuous nature due to effectively infinite resolution. The strategy involves implementing a sampling approach to gather multiple samples per pixel rather than a single ray through the pixel center, which is known as point sampling. This adjustment aims to integrate the light falling around the pixel, approximating a more accurate representation of the continuous result. The tutorial discusses a straightforward approach, sampling a square region surrounding the pixel and averaging the resultant light values to create a smoother, more visually appealing image.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/antialias-before-after.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/antialias-before-after.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 4: Before and after antialiasing</em>
@@ -130,7 +130,7 @@ The tutorial starts with the introduction of diffuse materials, often referred t
 To simulate the Lambertian distribution, the tutorial illustrates the creation of a sphere displaced from the surface at the point of intersection. Explaining the concept of two unique unit spheres tangent to any intersection point—one on each side of the surface—the tutorial elaborates on their displacement from the surface by their respective radius. Each sphere is associated with a direction—toward and away from the surface's normal—designating one as inside the surface and the other as outside. The process involves selecting the appropriate tangent unit sphere that aligns with the side of the surface as the ray origin, followed by picking a random point on this sphere to generate a ray from the hit point.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/lambertian.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/lambertian.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 5: Lambertian Sphere</em>
@@ -146,7 +146,7 @@ Next the tutorial introduces metal materials, specifically addressing the behavi
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/reflection.jpg" alt="Image description" width="450" height="325" style="border-radius: 5px;"/>
+  <img src="../images/reflection.jpg" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 6: Ray Reflection</em>
@@ -156,7 +156,7 @@ The design considerations involve working with unit vectors and ensuring that th
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/metal-sphere.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/metal-sphere.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 7: Metal Sphere</em>
@@ -167,7 +167,7 @@ The design considerations involve working with unit vectors and ensuring that th
 The tutorial delves into the simulation of dielectric materials, encompassing transparent substances such as water, glass, and diamond. When light interacts with these materials, it bifurcates into a reflected ray and a refracted (transmitted) ray. To handle this interaction, the tutorial proposes a methodology wherein a random choice between reflection and refraction generates only one scattered ray per interaction. Understanding this process involves incorporating Snell's law, a fundamental principle describing the phenomenon of refraction. This law is expressed in terms of angles from the surface normal (θ and θ′) and the refractive indices (η and η′) of the materials involved—typically air (η = 1.0), glass (η = 1.3–1.7), and diamond (η = 2.4). However, one of the practical challenges arises when the ray encounters a material with a higher refractive index, leading to an absence of real solutions in Snell's law, resulting in the impossibility of refraction. In such cases, total internal reflection occurs, as indicated by the mathematical derivation of *sinθ′* and the limiting factor when *sinθ′* exceeds the value of 1.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/refraction.jpg" alt="Image description" width="650" height="325" style="border-radius: 5px;"/>
+  <img src="../images/refraction.jpg" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 8: Snell's Law</em>
@@ -179,7 +179,7 @@ Moreover, the tutorial addresses the variability in the reflectivity of real gla
 In this section the focus shifts towards addressing the placement and orientation of the camera within the rendered scene. To attain a flexible viewpoint, the tutorial introduces essential points—designating the position where the camera is placed as "lookfrom" and the focal point as "lookat." Moreover, it highlights the need to define the camera's roll or sideways tilt, which refers to its rotation around the axis formed by the lookat and lookfrom points. Explaining the concept of specifying an "up" vector for the camera, the tutorial emphasizes the importance of projecting this up vector onto a plane orthogonal to the view direction, resulting in a camera-relative "view up" (vup) vector. By employing a series of mathematical operations involving cross products and vector normalizations, the tutorial establishes a complete orthonormal basis (u, v, w) that defines the camera's orientation. These unit vectors (u, v, w) represent the camera's right, up, and opposite view direction, respectively, within a right-hand coordinate system, with the camera center situated at the origin. This approach lays the foundation for maneuvering and directing the camera to various positions and orientations within the rendered scene.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/view-distant.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/view-distant.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 9: Distant View</em>
@@ -187,7 +187,7 @@ In this section the focus shifts towards addressing the placement and orientatio
 {{< /rawhtml>}}
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/zoom-in.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/zoom-in.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 10: Zoomed In</em>
@@ -200,7 +200,7 @@ The tutorial explores the concept of depth of field or defocus blur, stemming fr
 To simulate defocus blur, the virtual camera utilizes an aperture solely to create a blurred effect, distinct from real cameras where aperture size impacts both exposure and blur. In this context, the tutorial describes the generation of multiple rays from the "lookfrom" position, where the vector connecting "lookfrom" and the pixel on the viewport defines the ray's direction. It then draws a parallel between the previously discussed antialiasing technique, where rays were scattered around a pixel, and the method employed for defocus blur. For defocus blur, the ray's origin is randomly chosen from an aperture situated at the "lookfrom" position, replicating the blurry effect observable in real cameras.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/defocus-blur.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/defocus-blur.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 11: Depth Field</em>
@@ -213,7 +213,7 @@ In the tutorial's exploration of motion blur, it highlights the trade-off betwee
 Addressing the technicalities, the tutorial emphasizes the importance of managing time intervals for the shutter, contemplating both the duration from one shutter opening to the next and how long the shutter stays open for each frame. The tutorial outlines the necessity of setting up the camera with suitable shutter timings and considerations for animated objects, establishing a method for them to adapt their motion during specific frames. While discussing the method to handle motion blur and time intervals, the tutorial opts for a simplified model to create only a single frame, implicitly assuming a start at time = 0 and ending at time = 1. This approach involves adjustments to the camera to launch rays at random times between the start and end time, paving the way for future animated sphere creation and laying the groundwork for time management within the ray-tracing process.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/motion-blur.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/motion-blur.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 12: Motion Blur</em>
@@ -287,7 +287,7 @@ In the context of texture mapping, the tutorial delves into the creation of an i
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/earth-sphere.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/earth-sphere.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 13: Earth Mapped Sphere</em>
@@ -359,7 +359,7 @@ class perlin {
 {{< rawhtml>}}
 <br/>
 <p align="center">
-  <img src="../images/perlin-turb.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/perlin-turb.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 14: Perline Noise with Turbulence</em>
@@ -369,7 +369,7 @@ class perlin {
 The Perlin class extends its capabilities by moving the pattern off the lattice, using random unit vectors positioned on lattice points. Ken Perlin's pioneering method involves employing dot products to achieve this by replacing the usual floats with random vectors. This deviation off the lattice diminishes the blocky visual pattern and creates more organic, natural-looking textures. Another significant aspect introduced in this section is the notion of turbulence, a common practice in generating complex, composite noise by summing multiple frequencies. By utilizing the 'turb' function within the Perlin class, users can create complex patterns by combining various noise calls with different scales, thereby producing intricate and nuanced textures. Moreover, the tutorial introduces how to apply turbulence indirectly to create a marble-like texture. It demonstrates a basic implementation where the color is tied to a sine function, and turbulence adjusts the phase, causing the stripes to ripple and undulate. This effect gives the texture a marble-like appearance, providing a straightforward yet powerful way to create visually appealing textures in procedural texture generation.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/Perlin_final.png" alt="Image description" width="750" height="425" style="border-radius: 10px;"/>
+  <img src="../images/Perlin_final.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 15: Perline Noise with Adjusted Phase</em>
@@ -384,7 +384,7 @@ In the subsequent section, the tutorial delves into the fundamental process of d
 In the ongoing exploration of determining the position of the intersection point relative to the quadrilateral, the tutorial delves into orienting points on the plane. While the intersection point lies on the plane containing the quadrilateral, it could exist anywhere on the plane, necessitating a test to discern if it falls inside or outside the quad. To achieve this, the tutorial constructs a coordinate frame for the plane, comprising a plane origin point Q and two basis vectors, u and v. Unlike conventional orthogonal axes, these vectors need not be perpendicular, allowing for a more versatile span of the entire space. The tutorial introduces the notion of UV coordinates for the intersection point, unveiling the intricacies of determining scalar values α and β to orient the point P on the plane. Through an insightful exploration of vector math, the tutorial demystifies the calculation of these coefficients, emphasizing their role in placing the intersection point within the quadrilateral and paving the way for subsequent steps in the ray-tracing process.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/quads.png" alt="Image description" width="750" height="750" style="border-radius: 10px;"/>
+  <img src="../images/quads.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 16: Quads</em>
@@ -398,7 +398,7 @@ Unlike early raytracers that employed points or directions as light sources, con
 Embarking on the exploration of light interaction among diffuse surfaces, the tutorial introduces the iconic "Cornell Box," a conceptual framework dating back to 1984. Designed to emulate the complexities of light dynamics within confined spaces, the tutorial guides us through the creation of a virtual Cornell Box. Comprising five walls and a luminous element, this digital rendition of the Cornell Box serves as an experimental arena for understanding how light behaves and interacts with different surfaces. The construction of this virtual environment sets the stage for further advancements in the tutorial, delving into the intricacies of light reflection, refraction, and shadowing within the context of this carefully crafted digital space.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/cornell-empty.png" alt="Image description" width="750" height="750" style="border-radius: 10px;"/>
+  <img src="../images/cornell-empty.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 17: Cornell Box</em>
@@ -409,8 +409,7 @@ Embarking on the exploration of light interaction among diffuse surfaces, the tu
 The tutorial now ventures into the domain of volumes, adding an extra layer of realism to the virtual world by simulating elements like smoke, fog, and mist. These phenomena, often referred to as volumes or participating media, bring a dynamic and immersive quality to the digital environment. The tutorial introduces the concept of constant density mediums, where rays traversing through the volume may scatter within or continue their journey, influenced by factors such as the density of the medium. The denser the volume, the higher the likelihood of scattering events occurring. This section lays the foundation for incorporating sophisticated features like subsurface scattering, teasing the intricacies of making a volume a random surface. Through clever software architecture, the tutorial navigates the nuanced integration of volumes into the ray-tracing framework, opening up possibilities for the realistic depiction of atmospheric effects and internal structures within objects.
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/cornell-smoke.png" alt="Image description" width="750" height="750" style="border-radius: 10px;"/>
-</p>
+  <img src="../images/cornell-smoke.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 <p align="center">
   <em>Figure 17: Cornell box with blocks of smoke</em>
 </p>
@@ -419,7 +418,7 @@ The tutorial now ventures into the domain of volumes, adding an extra layer of r
 {{< rawhtml>}}
 <br/>
 <p align="center">
-  <img src="../images/final-render-2.png" alt="Image description" width="750" height="750" style="border-radius: 10px;"/>
+  <img src="../images/final-render-2.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 18: Final Render</em>
