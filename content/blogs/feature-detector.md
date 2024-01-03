@@ -1,7 +1,7 @@
 ---
-title: "Computer Vision: Feature Detectors"
+title: "Computer Vision: Classical Feature Detection"
 date: 2023-09-7T23:15:00+07:00
-slug: feature-detector
+slug: orb-feature-detector
 category: computer-vision
 summary:
 description: 

@@ -1,5 +1,5 @@
 ---
-title: "Ray Tracing Essentials: From Concepts to Stunning Visuals🔦"
+title: "Ray Tracing Essentials🔦"
 date: 2022-04-04T23:15:00+07:00
 slug: ray-tracing
 category: projects
@@ -14,7 +14,7 @@ showtoc: true
 draft: false
 ---
 
-## Overview
+## Introduction
 
 The journey into the realm of ray tracing begins with a promise of simplicity and yet a powerful outcome, as Peter Shirley, a seasoned educator in graphics, distills years of teaching experience into a practical how-to guide. For someone looking to start their journey into Computer Graphics, this is the best tutorial on the internet, with easy-to-follow code structure and amazing image renders. He sets the stage by emphasizing the underlying principles, aiming to steer beginners toward a fulfilling experience of creating impressive imagery. In demystifying the term "ray tracing" \( rendering technique that simulates the behavior of light to generate highly realistic images \) Shirley clarifies that the tutorial primarily focuses on a path tracer, a fundamental technique allowing enthusiasts to construct a general ray tracer. The emphasis here isn't on complexity but rather on grasping the core concepts through relatively simple code implementation, enabling computers to handle the bulk of the workload. It's important to note that in the broader context of computer graphics, applications like Blender with its Cycles and Eevee engines also utilize ray tracing techniques. While Shirley's tutorial doesn't encompass the breadth of functionalities seen in Blender's engines, it serves as an accessible starting point for understanding the fundamental principles of ray tracing. Cycles, for instance, is known for its path tracing capabilities, providing highly realistic results suitable for animations and still images. Eevee, on the other hand, employs rasterization techniques and real-time rendering, delivering quick results for interactive applications. The tutorial primarily employs C++ for its implementation, due to its efficiency, portability, and prevalence in professional-grade renderers used in movies and video games. Although he adheres to a relatively conventional subset of C++, Shirley leverages critical features such as inheritance and operator overloading, essential in crafting ray tracers. [Github Link](https://github.com/Ric1779/Ray-tracing) for the implementation.
 
