@@ -1,7 +1,7 @@
 ---
-title: "Monocular ORB-SLAM📸"
-date: 2022-04-04T23:15:00+07:00
-slug: SLAM
+title: "Monocular ORB-SLAM 📸"
+date: 2023-12-22T23:15:00+07:00
+slug: monocular-SLAM
 category: projects
 summary:
 description:
@@ -16,7 +16,7 @@ draft: false
 
 ## Introduction
 
-In this project I implemented monocular ORB-SLAM ( Simultaneous Localization and Mapping), I leveraged MATLAB's Computer Vision Toolbox to implement the ORB-SLAM pipeline, a powerful algorithm widely used in robotics, augmented reality, and autonomous systems.
+In this project I implemented monocular ORB-SLAM ( Simultaneous Localization and Mapping), I leveraged MATLAB's Computer Vision Toolbox to implement the ORB-SLAM pipeline, a powerful algorithm widely used in robotics, augmented reality, and autonomous systems. [Github Link](https://github.com/Ric1779/SLAM-MATLAB) for the implementation.
 
 ORB-SLAM Pipeline:
 

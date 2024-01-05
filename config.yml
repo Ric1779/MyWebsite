@@ -60,15 +60,14 @@ params:
     enabled: true # needs to be explicitly set
     title: "Welcome!"
     subtitle: "This is the website of Richards. Here I document my journey of learning and exploration in the 
-    realms of computer vision, deep learning and mathematics. Through my blogs, I share my insights and 
-    experiences as I delve into these fascinating subjects."
+    realms of computer vision, deep learning and mathematics." # Through my blogs, I share my insights and experiences as I delve into these fascinating subjects.
     imageUrl: "images/soldier-modified.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Ric"
     buttons:
-      - name: Blogs
-        url: blogs
+      #- name: Blogs
+      #  url: blogs
       - name: Projects
         url: projects
 
@@ -130,10 +129,10 @@ menu:
     #  name: About
     #  url: /about/
     #  weight: 1
-    - identifier: blog
-      name: Blogs
-      url: /blogs/
-      weight: 1   
+    #- identifier: blog
+    #  name: Blogs
+    #  url: /blogs/
+    #  weight: 1   
     - identifier: projects
       name: Projects
       url: /projects/
@@ -146,7 +145,7 @@ menu:
       name: Drawing
       url: /Drawing/
       weight: 4
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 5
+    #- identifier: tags
+    #  name: tags
+    #  url: /tags/
+    #  weight: 5

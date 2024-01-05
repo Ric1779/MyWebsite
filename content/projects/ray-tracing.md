@@ -1,6 +1,6 @@
 ---
-title: "Ray Tracing Essentials🔦"
-date: 2022-04-04T23:15:00+07:00
+title: "Ray Tracing Essentials 🔦"
+date: 2023-10-30T23:15:00+07:00
 slug: ray-tracing
 category: projects
 summary:
