@@ -34,7 +34,7 @@ params:
   # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark # auto, dark, light
+  defaultTheme: light # auto, dark, light
   disableThemeToggle: false
   math: true
   ShowReadingTime: true
@@ -129,10 +129,10 @@ menu:
     #  name: About
     #  url: /about/
     #  weight: 1
-    #- identifier: blog
-    #  name: Blogs
-    #  url: /blogs/
-    #  weight: 1   
+    - identifier: blog
+      name: Blogs
+      url: /blogs/
+      weight: 1   
     - identifier: projects
       name: Projects
       url: /projects/

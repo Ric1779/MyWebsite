@@ -15,13 +15,13 @@ draft: false
 ---
 
 ## Introduction
-
+---
 The project delves into Neural Radiance Fields (NeRF), a cutting-edge methodology in computer graphics and computer vision. NeRF has had a significant impact in 3D scene synthesis by modeling the volumetric scene function, allowing for the creation of highly realistic and detailed virtual environments. Its ability to comprehend radiance at each point in a scene opens up new possibilities for rendering scenes with unparalleled accuracy. The motivation behind this undertaking lies in the aspiration to contribute to the forefront of 3D scene reconstruction and rendering. In contrast to traditional graphics methods, which often struggle with capturing intricate lighting effects and scene details, NeRF offers a data-driven approach that promises to overcome these limitations. The project seeks to explore and showcase the potential of NeRF in generating immersive and visually striking 3D scenes.
 
 To bring this vision to life, the project strategically integrates two pivotal technologies—Blender's Python API and PyTorch. Blender's Python API was used for creating and manipulating 3D scenes, providing a versatile environment for dataset generation. This choice aligns seamlessly with the project's objective of producing high-quality training data for the NeRF model. Complementing this, PyTorch serves as the backbone for implementing and training the NeRF model. The synergistic use of Blender's Python API and PyTorch enables a fluid integration of synthetic 3D data creation and neural network training, forming the basis for this project.
 
 ## Dataset
-
+---
 In the process of crafting a tailored dataset essential for training the NeRF model, the decision to construct a custom dataset arose from the unique capabilities offered by Blender's Python API. Unlike real-world images, Blender provided a controlled environment where obtaining crucial camera intrinsic and extrinsic parameters was feasible. This was a pivotal aspect, as NeRF's training relies heavily on accurate knowledge of the camera's orientation and calibration parameters, which can be challenging to acquire in real-world scenarios.
 
 By utilizing Blender's Python API, the project not only addressed the need for diverse and detailed scenes but also tackled a fundamental challenge in NeRF training – the availability of precise camera parameters. The API facilitated the extraction of intrinsic details, such as focal length, as well as extrinsic details like rotation and translation matrices. This level of control over the camera parameters allowed for a more realistic and nuanced training of the NeRF model. In navigating these intricacies, the project highlighted the important role of Blender's Python API not only in generating diverse scenes but also in providing the crucial camera information required for a robust and accurate NeRF model.
@@ -56,7 +56,7 @@ By utilizing Blender's Python API, the project not only addressed the need for d
 {{< /rawhtml>}}
 
 ## NeRF
-
+---
 ### Introduction to NeRF Architecture
 
 NeRF conceptualizes a static scene as a continuous 5D function, defining the radiance emitted in each direction {{< mathjax/inline >}}\((\theta, \phi)\){{< /mathjax/inline >}} at every point {{< mathjax/inline >}}\((x, y, z)\){{< /mathjax/inline >}} in space. Additionally, a density parameter at each point serves as a differential opacity, controlling the radiance accumulation along rays passing through the scene. This continuous scene representation is achieved through a deep fully-connected neural network,without any convolutional layers. The neural network efficiently maps a single 5D coordinate {{< mathjax/inline >}}\((x, y, z, \theta, \phi)\){{< /mathjax/inline >}} to a corresponding volume density and view-dependent RGB color.
@@ -138,3 +138,12 @@ To achieve this, the authors rewrite the alpha-composited color from the coarse 
 Normalizing these weights as {{< mathjax/inline >}}\(\hat{w}_i = w_i/\sum_{j=1}^{N_c} w_j\){{< /mathjax/inline >}} produces a piecewise-constant Probability Density Function (PDF) along the ray. Subsequently, a second set of {{< mathjax/inline >}}\(N_f\){{< /mathjax/inline >}} locations is sampled from this distribution using inverse transform sampling. The "fine" network is then evaluated at the union of the first and second sets of samples, and the final rendered color of the ray {{< mathjax/inline >}}\(\hat{C}_f(r)\){{< /mathjax/inline >}} is computed using equation given in volume rendering section but utilizing all {{< mathjax/inline >}}\(N_c + N_f\){{< /mathjax/inline >}} samples.
 
 This hierarchical sampling procedure ensures that more samples are allocated to regions expected to contain visible content. While addressing a similar goal as importance sampling, the authors' method employs the sampled values as a nonuniform discretization of the entire integration domain. This approach differs from treating each sample as an independent probabilistic estimate of the entire integral, offering an efficient solution to the challenges posed by traditional rendering strategies. The loss function used was a simple total squared error between the rendered and true pixel colors for both the coarse and fine renderings.
+
+{{< rawhtml>}}
+<p align="center">
+  <img src="../images/NeRF/test_sample.gif" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
+</p>
+<p align="center">
+  <em>Figure 2: Test Samples</em>
+</p>
+{{< /rawhtml>}}
