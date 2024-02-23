@@ -18,12 +18,20 @@ minify:
   disableXML: true
   minifyOutput: true
 
+pygmentsUseClasses: false
+pygmentsCodefences: true
+pygmentsStyle: "fortnite"
+
 markup:
   highlight:
-    codeFences: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
     lineNos: false
+    lineNumbersInTable: true
     noClasses: true
-    style: monokai
+    tabWidth: 2
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -58,16 +66,18 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "Welcome!"
-    subtitle: "This is the website of Richards. Here I document my journey of learning and exploration in the 
-    realms of computer vision, deep learning and mathematics." # Through my blogs, I share my insights and experiences as I delve into these fascinating subjects.
+    title: "Namaste Namaskaram Vanakkam 🙏"
+    subtitle: "A curious earthling looking for optimal solutions under the specified 
+    constraints and trying to function at different levels of abstraction.
+     In this chronicle, I share my expedition of discovery and learning in
+      the domains of computer vision, deep learning, and mathematics."
     imageUrl: "images/soldier-modified.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Ric"
     buttons:
-      #- name: Blogs
-      #  url: blogs
+      - name: Blogs
+        url: blogs
       - name: Projects
         url: projects
 

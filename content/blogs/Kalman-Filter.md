@@ -225,7 +225,7 @@ In the upcoming sections, we will explore the Extended Kalman Filter (EKF), an e
 
 ---
 
-## Introduction to Extended Kalman Filter (EKF)
+## Introduction to Extended Kalman Filter
 
 The Extended Kalman Filter (EKF) emerged as a natural extension of the Kalman Filter to address the challenges posed by nonlinear systems. While the Kalman Filter excels in linear scenarios, many real-world applications involve dynamic systems with nonlinear dynamics. The EKF was developed to extend the applicability of the Kalman Filter to such nonlinear systems, offering a solution to the limitations imposed by the linearity assumption.
 
@@ -273,13 +273,13 @@ For a vector valued function  {{< mathjax/inline>}}\(f(x)\) {{< /mathjax/inline>
 ### Adaptations in EKF Equations
 
 #### Prediction Step in EKF
-The prediction step in the Extended Kalman Filter closely follows the Kalman Filter's prediction equations. However, in the EKF, the state transition matrix  {{< mathjax/inline>}}\(A\) {{< /mathjax/inline>}} is replaced with the Jacobian matrix  {{< mathjax/inline>}}\(F_{k+1}\) {{< /mathjax/inline>}} to account for the {{< mathjax/inline>}}<span style="color: yellow;">nonlinearity in the system dynamics</span>{{< /mathjax/inline>}}:
+The prediction step in the Extended Kalman Filter closely follows the Kalman Filter's prediction equations. However, in the EKF, the state transition matrix  {{< mathjax/inline>}}\(A\) {{< /mathjax/inline>}} is replaced with the Jacobian matrix  {{< mathjax/inline>}}\(F_{k+1}\) {{< /mathjax/inline>}} to account for the {{< mathjax/inline>}}<span style="color: #0084a5;">nonlinearity in the system dynamics</span>{{< /mathjax/inline>}}:
  {{< mathjax/block>}}\[ \hat{x}_{k+1|k} = f(\hat{x}_{k|k}, u_{k+1}) \]
 \[ P_{k+1|k} = F_{k+1} P_{k|k} F_{k+1}^T + Q_k \]
 where \(F_{k+1} = J_f(\hat{x}_{k|k})\).
  {{< /mathjax/block>}}
 #### Update Step in EKF
-Similarly, in the update step, the Kalman Gain ( {{< mathjax/inline>}}\(K_k\) {{< /mathjax/inline>}}), state update, and covariance update equations are adapted to incorporate the Jacobian matrix  {{< mathjax/inline>}}\(H_k\) {{< /mathjax/inline>}} reflecting the {{< mathjax/inline>}}<span style="color: yellow;">nonlinearity in the measurement function</span>{{< /mathjax/inline>}}:
+Similarly, in the update step, the Kalman Gain ( {{< mathjax/inline>}}\(K_k\) {{< /mathjax/inline>}}), state update, and covariance update equations are adapted to incorporate the Jacobian matrix  {{< mathjax/inline>}}\(H_k\) {{< /mathjax/inline>}} reflecting the {{< mathjax/inline>}}<span style="color: #0084a5;">nonlinearity in the measurement function</span>{{< /mathjax/inline>}}:
  {{< mathjax/block>}}\[ K_{k+1} = P_{k+1|k} H_{k+1}^T (H_{k+1} P_{k+1|k} H_{k+1}^T + R_{k+1})^{-1} \]
 \[ \hat{x}_{k+1|k+1} = \hat{x}_{k+1|k} + K_{k+1}(z_{k+1} - h(\hat{x}_{k+1|k})) \]
 \[ P_{k+1|k+1} = (I - K_{k+1} H_{k+1}) P_{k+1|k} \]
