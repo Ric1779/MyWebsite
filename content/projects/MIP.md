@@ -246,6 +246,15 @@ function xhatOut = EKFupdate(params, t, z)
 end
 ```
 
+{{< rawhtml>}}
+<p align="center">
+  <img src="../images/MIP/EKF.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
+</p>
+<p align="center">
+  <em>Figure 3: An example of EKF state estimation</em>
+</p>
+{{< /rawhtml>}}
+
 ### Cascade Control Strategy:
 
 MIP is a type of coupled non-linear system. For such systems changes in one variable can affect others, leading to a system with interdependencies. Modeling and controlling such coupled systems require considering these interactions, making the analysis more challenging compared to uncoupled systems. In order to overcome this issue we perform approximation close to equilibrium, which results in {{< mathjax/inline>}}\(\phi\){{< /mathjax/inline>}} and {{< mathjax/inline>}}\(\dot{\phi}\){{< /mathjax/inline>}} to be zero, substituting the results in the equation of motion of MIP results in the following results:
