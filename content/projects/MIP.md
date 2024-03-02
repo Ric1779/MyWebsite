@@ -344,6 +344,6 @@ The simulation results, obtained using `ode45`, can then be visualized through p
   <img src="../images/MIP/MIPGIF.gif" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
-  <em>Figure 3: Feedback Motion Planning Output</em>
+  <em>Figure 4: Feedback Motion Planning Output</em>
 </p>
 {{< /rawhtml>}}
