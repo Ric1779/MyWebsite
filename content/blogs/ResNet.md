@@ -172,7 +172,7 @@ PyTorch is an open-source machine learning library, widely recognized for its fl
 
 - **Community Resources:** The vast array of tutorials, documentation, and pre-trained models available to the PyTorch community provides a wealth of knowledge and tools that can accelerate development and improve the quality of implementations. -->
 
-### Model Configuration
+## Model Configuration
 
 Model configuration is a crucial step in preparing for the training of deep learning models. It involves specifying the architecture, hyperparameters, and other settings that will be used during the training process. In the context of implementing ResNet architectures for CIFAR-10 classification using PyTorch, model configuration includes selecting the appropriate ResNet variant, configuring the heads for the model, setting the convolutional layer parameters, and deciding on the use of ImageNet pretraining. This section delves into these aspects to ensure a comprehensive understanding of how to configure a ResNet model effectively.
 
@@ -186,7 +186,7 @@ resnet_spec = {18: (BasicBlock, [2, 2, 2, 2]),
                152: (Bottleneck, [3, 8, 36, 3])}
 ```
 
-### Building the ResNet Layers
+## Building the ResNet Layers
 
 #### Overview of ResNet Layer Construction
 
@@ -276,7 +276,7 @@ The `__init__` method of the ResNet class initializes the entire architecture. I
 
 By systematically building ResNet layers, the architecture achieves impressive depth while maintaining the expressiveness necessary for learning complex features. The interplay between residual mappings and skip connections ensures the efficient flow of gradients during training, addressing challenges associated with deep networks.
 
-### Preparing the CIFAR-10 Dataset
+## Preparing the CIFAR-10 Dataset
 
 The CIFAR-10 dataset, consisting of 60,000 32x32 color images across 10 different classes, is a staple in the computer vision community for benchmarking image classification models. Properly preparing this dataset is crucial for the successful training and evaluation of ResNet models. This process involves loading the dataset, applying transformations to augment and normalize the data, and organizing the data into loaders for efficient training and testing. This section will guide you through each of these steps, ensuring your dataset is ready for use with PyTorch.
 
@@ -410,7 +410,7 @@ Integrating these components into a cohesive training script involves initializi
 
 Training a ResNet model on CIFAR-10 with PyTorch encapsulates the core principles of deep learning model development, from data preparation and model configuration to training, evaluation, and optimization. By following these guidelines, you can effectively train a ResNet model to achieve high classification accuracy on the CIFAR-10 dataset.
 
-### Evaluating the Model
+## Evaluating the Model
 
 After training a ResNet model on the CIFAR-10 dataset, evaluating its performance is crucial to understand its efficacy and generalization capabilities. Evaluation involves measuring the model's accuracy and other relevant metrics on a dataset it has not seen during training, typically a test set or validation set. This process helps to ensure that the model has learned to generalize from the training data rather than memorizing it. This section outlines the steps and considerations involved in evaluating the ResNet model on CIFAR-10, using PyTorch.
 
@@ -496,7 +496,7 @@ imshow(out)
 
 Evaluating a ResNet model on the CIFAR-10 dataset involves careful preparation, execution, and analysis to accurately assess the model's performance and generalization ability. By employing a combination of quantitative metrics and qualitative analysis, you can gain a comprehensive understanding of how well your model performs and identify opportunities for further optimization. This evaluative process is an integral part of developing robust, effective models for image classification and beyond.
 
-### Fine-tuning and Advanced Tips
+## Fine-tuning and Advanced Tips
 
 After training and evaluating a ResNet model on the CIFAR-10 dataset, you may seek ways to further improve performance or adapt the model to new tasks or datasets. Fine-tuning and employing advanced techniques can significantly enhance model efficacy, especially when dealing with complex datasets or aiming for high-precision applications. This section explores strategies for fine-tuning ResNet models and provides advanced tips for optimizing performance using PyTorch.
 
