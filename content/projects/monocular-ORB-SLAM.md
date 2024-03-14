@@ -15,7 +15,7 @@ draft: false
 ---
 
 ## Introduction
-
+---
 In this project I implemented monocular ORB-SLAM ( Simultaneous Localization and Mapping), I leveraged MATLAB's Computer Vision Toolbox to implement the ORB-SLAM pipeline, a powerful algorithm widely used in robotics, augmented reality, and autonomous systems. [Github Link](https://github.com/Ric1779/SLAM-MATLAB) for the implementation.
 
 ORB-SLAM Pipeline:
@@ -33,7 +33,7 @@ ORB-SLAM Pipeline:
    One of the critical aspects of ORB-SLAM is its ability to detect loops in the environment. This is achieved by comparing each key frame against all previous key frames using a bag-of-features approach. Once a loop closure is detected, the algorithm optimizes the pose graph, refining the camera poses of all key frames. This ensures a more coherent and accurate representation of the entire environment over time.
 
 ## Map Initialization
-
+---
 In this initial phase of the Monocular ORB-SLAM project, the journey begins with the initiation of the map, a fundamental step that shapes the accuracy and reliability of our SLAM results.
 
 ### Importance of Map Initialization
@@ -76,7 +76,7 @@ The algorithm iteratively refines the map initialization, checking and adjusting
 {{< /rawhtml>}}
 
 ## Storing Initial Key Frames and Map Points
-
+---
 Following the successful initialization of the 3D map using two frames, the Monocular ORB-SLAM project transitions into the phase of storing key frames and map points. It involves utilizing MATLAB's `imageviewset` and `worldpointset` objects to manage and store essential information about the key frames and the corresponding map points.
 
 ### `imageviewset`: Managing Key Frames
@@ -112,7 +112,7 @@ Beyond ORB, classical feature extraction methods in computer vision include:
 Each feature extraction method has its strengths and weaknesses, making them suitable for specific applications. ORB stands out in Monocular ORB-SLAM due to its balance between computational efficiency and robustness, making it well-suited for real-time visual odometry and mapping tasks. As the project advances, these features are strategically utilized to create a rich representation of the environment, ensuring accurate and consistent mapping over diverse scenes and conditions. Stay tuned for the upcoming sections, where we delve into the intricacies of the tracking and mapping processes, revealing the dynamic evolution of the 3D map over time.
 
 ## Loop Closure Using Bags-of-Words
-
+---
 In this section, the focus shifts towards loop detection, a crucial aspect of maintaining robustness in visual mapping. This process relies on the bags-of-words approach, a well-established method in computer vision that enhances the algorithm's capability for recognizing places and closing loops in the trajectory.
 
 ### Bags-of-Words Approach
@@ -185,6 +185,7 @@ The loop closure process involves building an incremental database, represented 
 Using bags-of-words' efficient large scale image search, loop closure process aims to identify previously visited locations, enhancing the algorithm's ability to close loops in the trajectory. This is vital for addressing accumulated errors and ensuring the consistency of the map. By incorporating features from the first two key frames into the database, the algorithm establishes a foundation for recognizing places during the subsequent stages of SLAM.
 
 ## Refining the Initial Reconstruction
+---
 A refinement process is performed on the initial 3D reconstruction using bundle adjustment. This critical step optimizes both camera poses and world points, aiming to minimize overall reprojection errors. **Bundle adjustment** is a fundamental technique in computer vision and photogrammetry. In the context of Monocular ORB-SLAM, it addresses the inevitable imperfections and inaccuracies in the initial reconstruction. The adjustment simultaneously optimizes the estimated camera poses and 3D positions of map points to align with observed feature correspondences across multiple frames. By minimizing the reprojection errors — the disparities between observed and projected feature locations — the bundle adjustment ensures a more accurate and reliable representation of the environment.
 
 ### Optimization Process
@@ -216,7 +217,7 @@ In conclusion, the bundle adjustment process in Monocular ORB-SLAM is a pivotal 
 {{< /rawhtml>}}
 
 ## Tracking, Local Mapping, and Loop Closure
-
+---
 ### Tracking
 
 In the Tracking phase of Monocular ORB-SLAM, each frame undergoes a meticulous process to determine the camera's position and orientation in the environment. This phase is critical for maintaining the system's understanding of its surroundings and deciding when to insert a new key frame.
@@ -250,7 +251,7 @@ Loop closure detection is a critical component to correct accumulated errors ove
 The interplay of these three phases ensures the Monocular ORB-SLAM system's adaptability and accuracy in mapping dynamic environments. The continuous refinement through tracking, local mapping, and loop closure creates a robust and consistent 3D map representation.
 
 ## Pose Graph Optimization
-
+---
 In the final phase we correct any potential drift in the camera poses. This is achieved through a similarity pose graph optimization process, which operates on the essential graph extracted from the key frame set (`vSetKeyFrames`). The essential graph is constructed by removing connections with fewer than a specified minimum number of matches in the covisibility graph. The goal of this optimization is to refine and enhance the accuracy of camera poses, addressing any accumulated errors or drift that may have occurred during the mapping process.
 
 Once the similarity pose graph optimization is applied, the 3D locations of the map points are updated using the optimized poses and the associated scales. This step ensures that the entire map, including the positions of observed features and their relationships to the camera poses, is aligned more accurately with the real-world environment. By optimizing the poses globally, the system mitigates drift and improves the overall consistency of the reconstructed scene.

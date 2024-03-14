@@ -27,7 +27,7 @@ This blog post aims to guide readers through the process of implementing ResNets
 By the end of this post, readers will have a thorough understanding of ResNets and be equipped with the knowledge to implement and train their own ResNet models on CIFAR-10 or any other dataset of interest. Whether you're a student, a researcher, or an enthusiast in the field of machine learning, this journey through the implementation of ResNets promises to enrich your understanding of deep learning architectures and their application in solving complex problems in computer vision. For hands on implementation I've provided the following [google colab notebook](https://colab.research.google.com/drive/1wahKQBCKKPjqZe14xx2fcaCGtw-w65ye?usp=sharing).
 
 ## Understanding ResNets
-
+---
 The core idea behind ResNets lies in the introduction of "skip connections" or "shortcut connections" that bypass one or more layers. In a traditional sequential network, each layer's output is the input to the next layer. However, in a ResNet, the output of a layer can be the input to the next layer and also skip one or more layers ahead. This design allows the network to learn an identity function, ensuring that the addition of more layers does not degrade the network's performance. 
 
 #### Significance of Skip Connections
@@ -41,6 +41,24 @@ ResNets utilize two primary types of blocks: BasicBlock and Bottleneck.
 - **BasicBlock:** This is the simpler of the two, consisting of two convolutional layers with batch normalization and ReLU activation. BasicBlocks are typically used in smaller ResNet models such as ResNet-18 and ResNet-34. Each convolutional layer learns features from its input, and the skip connection allows the block to learn residuals, making it easier to train deeper networks.
 
 - **Bottleneck Block:** Designed for deeper networks, the Bottleneck block uses a three-layer architecture. It starts with a 1x1 convolutional layer that reduces the dimensionality (the number of channels), followed by a 3x3 convolutional layer that performs the primary feature extraction, and finally, another 1x1 convolutional layer that expands the dimensions back to the required size. This design is more efficient in terms of computation and is used in deeper ResNet models such as ResNet-50, ResNet-101, and ResNet-152.
+
+{{< rawhtml>}}
+<p align="center">
+  <img src="../images/resnet/BasicBlock.jpg" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
+</p>
+<p align="center">
+  <em>Figure 1: Basic Block</em>
+</p>
+{{< /rawhtml>}}
+
+{{< rawhtml>}}
+<p align="center">
+  <img src="../images/resnet/BottleNeck.jpg" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
+</p>
+<p align="center">
+  <em>Figure 2: Bottleneck Block</em>
+</p>
+{{< /rawhtml>}}
 
 ```python
 class BasicBlock(nn.Module):
@@ -137,10 +155,10 @@ ResNets come in various sizes, denoted by the number of layers they contain, suc
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/resnet-models-from-table.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
+  <img src="../images/resnet/resnet-models-from-table.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
-  <em>Figure 1: All the ResNet model structures.</em>
+  <em>Figure 3: All the ResNet model structures.</em>
 </p>
 {{< /rawhtml>}}
 
@@ -173,7 +191,7 @@ PyTorch is an open-source machine learning library, widely recognized for its fl
 - **Community Resources:** The vast array of tutorials, documentation, and pre-trained models available to the PyTorch community provides a wealth of knowledge and tools that can accelerate development and improve the quality of implementations. -->
 
 ## Model Configuration
-
+---
 Model configuration is a crucial step in preparing for the training of deep learning models. It involves specifying the architecture, hyperparameters, and other settings that will be used during the training process. In the context of implementing ResNet architectures for CIFAR-10 classification using PyTorch, model configuration includes selecting the appropriate ResNet variant, configuring the heads for the model, setting the convolutional layer parameters, and deciding on the use of ImageNet pretraining. This section delves into these aspects to ensure a comprehensive understanding of how to configure a ResNet model effectively.
 
 The first step in model configuration is to select the appropriate ResNet variant based on the requirements of the task and the available computational resources. The `resnet_spec` dictionary provided in the initial code snippet outlines the available ResNet variants (ResNet-18, ResNet-34, ResNet-50, ResNet-101, ResNet-152) and maps them to their corresponding block types (BasicBlock or Bottleneck) and layer configurations. The choice of variant impacts the model's complexity, performance, and training time. For CIFAR-10, smaller variants like ResNet-18 or ResNet-34 may suffice, given the relatively simple nature of the dataset compared to more complex datasets like ImageNet.
@@ -187,7 +205,7 @@ resnet_spec = {18: (BasicBlock, [2, 2, 2, 2]),
 ```
 
 ## Building the ResNet Layers
-
+---
 #### Overview of ResNet Layer Construction
 
 The core strength of ResNet lies in its layered architecture, where residual blocks are stacked to form deep networks. In this section, we will delve into the details of building these layers and understand how the architecture adapts with increasing depth.
@@ -277,7 +295,7 @@ The `__init__` method of the ResNet class initializes the entire architecture. I
 By systematically building ResNet layers, the architecture achieves impressive depth while maintaining the expressiveness necessary for learning complex features. The interplay between residual mappings and skip connections ensures the efficient flow of gradients during training, addressing challenges associated with deep networks.
 
 ## Preparing the CIFAR-10 Dataset
-
+---
 The CIFAR-10 dataset, consisting of 60,000 32x32 color images across 10 different classes, is a staple in the computer vision community for benchmarking image classification models. Properly preparing this dataset is crucial for the successful training and evaluation of ResNet models. This process involves loading the dataset, applying transformations to augment and normalize the data, and organizing the data into loaders for efficient training and testing. This section will guide you through each of these steps, ensuring your dataset is ready for use with PyTorch.
 
 
@@ -411,7 +429,7 @@ Integrating these components into a cohesive training script involves initializi
 Training a ResNet model on CIFAR-10 with PyTorch encapsulates the core principles of deep learning model development, from data preparation and model configuration to training, evaluation, and optimization. By following these guidelines, you can effectively train a ResNet model to achieve high classification accuracy on the CIFAR-10 dataset.
 
 ## Evaluating the Model
-
+---
 After training a ResNet model on the CIFAR-10 dataset, evaluating its performance is crucial to understand its efficacy and generalization capabilities. Evaluation involves measuring the model's accuracy and other relevant metrics on a dataset it has not seen during training, typically a test set or validation set. This process helps to ensure that the model has learned to generalize from the training data rather than memorizing it. This section outlines the steps and considerations involved in evaluating the ResNet model on CIFAR-10, using PyTorch.
 
 ```python
@@ -485,10 +503,10 @@ imshow(out)
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/CIFAR_sample.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
+  <img src="../images/resnet/CIFAR_sample.png" alt="Image description" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
-  <em>Figure 2: Prediction on the testset</em>
+  <em>Figure 4: Prediction on the testset</em>
 </p>
 {{< /rawhtml>}}
 
@@ -497,7 +515,7 @@ imshow(out)
 Evaluating a ResNet model on the CIFAR-10 dataset involves careful preparation, execution, and analysis to accurately assess the model's performance and generalization ability. By employing a combination of quantitative metrics and qualitative analysis, you can gain a comprehensive understanding of how well your model performs and identify opportunities for further optimization. This evaluative process is an integral part of developing robust, effective models for image classification and beyond.
 
 ## Fine-tuning and Advanced Tips
-
+---
 After training and evaluating a ResNet model on the CIFAR-10 dataset, you may seek ways to further improve performance or adapt the model to new tasks or datasets. Fine-tuning and employing advanced techniques can significantly enhance model efficacy, especially when dealing with complex datasets or aiming for high-precision applications. This section explores strategies for fine-tuning ResNet models and provides advanced tips for optimizing performance using PyTorch.
 
 #### Fine-tuning Pretrained Models

@@ -15,7 +15,6 @@ draft: false
 ---
 
 ## Introduction
-
 ---
 The Mobile Inverted Pendulum (MIP) serves as an excellent introduction in the understanding of control systems and robotics. Comprising an inverted pendulum mounted on a wheel, the MIP exemplifies an inherently unstable system that constantly seeks equilibrium. This characteristic instability necessitates the application of advanced control methodologies to ensure stability and enable precise maneuvering. This project was implemented as part of the Robotics Specialization in Coursera.
 
@@ -42,7 +41,6 @@ The utilization of MATLAB's ode45 function for solving the differential equation
 
 ## Modelling a MIP
 ---
-
 ### Explanation of the Physical Principles using Lagrangian Mechanics
 
 Lagrangian mechanics offers a fresh perspective on understanding motion, departing from the conventional Newtonian mechanics which relies on forces to a focus on energy and optimization. In this framework, motion is conceptualized as an optimization process, with the Lagrangian (L), defined as the difference between kinetic energy (T) and potential energy (V), playing a central role. The principle of stationary action dictates that physical systems follow trajectories that minimize the action, computed as the integral over time of the Lagrangian along a given trajectory. This optimization process allows for the prediction of motion by effectively balancing kinetic and potential energies.

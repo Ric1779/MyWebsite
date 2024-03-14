@@ -24,10 +24,8 @@ The Kalman Filter owes its name to Rudolf Kalman, a Hungarian-American mathemati
 
 Since its inception, the Kalman Filter has become a ubiquitous tool in a wide array of fields. From guiding spacecraft during interplanetary missions to enabling smooth GPS navigation in our everyday devices, the Kalman Filter's versatility has made it a cornerstone of modern control and estimation theory.
 
----
-
 ## Basics of Kalman Filter
-
+---
 At the heart of the Kalman Filter lies a vision crafted by Rudolf Kalman—a vision that aimed to address the challenges of estimating the state of a dynamic system in the presence of noisy measurements. Kalman's approach was grounded in the notion that combining predictions from a mathematical model with real-world measurements could yield a more accurate and reliable estimate of the system's true state.
 
 ### Key Concepts in State Estimation
@@ -60,10 +58,8 @@ The update step is where the Kalman Filter truly shines. It combines the predict
 
 In the subsequent sections, we will delve into the mathematical foundation of the Kalman Filter, providing a detailed look at the equations and principles that underpin its functionality. Additionally, we will explore real-world applications, showcasing how this elegant algorithm transforms raw data into invaluable insights across diverse domains.
 
----
-
 ## Mathematical Foundation
-
+---
 ### Kalman Filter Equations
 
 At its core, the Kalman Filter operates through a set of recursive equations that dynamically update the estimate of the system's state. The key equations governing the Kalman Filter process are as follows:
@@ -208,9 +204,8 @@ The Kalman Filter is an iterative algorithm, meaning it repeats the prediction a
 
 In the subsequent sections, we will explore real-world applications of the Kalman Filter, showcasing its versatility and effectiveness in a variety of domains.
 
----
-
 ## Limitations and Challenges
+---
 The Kalman Filter is most effective when dealing with linear systems and Gaussian noise due to the simplicity of mathematical computations and closed-form solutions. However, real-world systems often exhibit nonlinear behavior, and noise may not conform to Gaussian distributions. In such cases, the standard Kalman Filter may yield suboptimal results. To address this, the Extended Kalman Filter (EKF) extends Kalman Filter principles to handle nonlinear systems by linearizing them at each time step. Despite this adaptation, the EKF introduces challenges as the linearization process relies on the quality of approximations, particularly affecting performance in highly nonlinear systems. More advanced techniques like Unscented Kalman Filter (UKF) or Particle Filters may be preferred in such scenarios.
 
 The Kalman Filter's sensitivity to initial conditions, especially in cases with poorly defined initial state estimates or covariance matrices, poses a challenge. Incorrectly chosen initial conditions may lead to divergence or convergence to an inaccurate solution. Additionally, the effectiveness of the Kalman Filter is contingent on accurately modeling covariances associated with system dynamics and measurements. Obtaining precise values for these covariances can be challenging, potentially resulting in suboptimal filtering performance.
@@ -223,10 +218,8 @@ While the Kalman Filter is a powerful and widely applied tool, practitioners mus
 
 In the upcoming sections, we will explore the Extended Kalman Filter (EKF), an extension that addresses some of the limitations of the standard Kalman Filter, providing a more robust solution for nonlinear systems.
 
----
-
 ## Introduction to Extended Kalman Filter
-
+---
 The Extended Kalman Filter (EKF) emerged as a natural extension of the Kalman Filter to address the challenges posed by nonlinear systems. While the Kalman Filter excels in linear scenarios, many real-world applications involve dynamic systems with nonlinear dynamics. The EKF was developed to extend the applicability of the Kalman Filter to such nonlinear systems, offering a solution to the limitations imposed by the linearity assumption.
 
 #### Dynamic Systems
@@ -247,10 +240,8 @@ The prediction step in the EKF closely resembles that of the Kalman Filter, invo
 #### Update Step
 In the update step, the EKF incorporates measurements to refine the state estimate. The Kalman Gain calculation and state update equations in the EKF, while similar in structure to the Kalman Filter, involve the use of Jacobian matrices to account for the nonlinearity in the system.
 
----
-
 ## Mathematical Adaptations in EKF
-
+---
 ### Linearization Process
 
 #### Overview
@@ -295,10 +286,8 @@ Practitioners often perform consistency checks to assess the validity of the lin
 
 In the subsequent sections, we will explore practical examples and applications of the Extended Kalman Filter, showcasing how the linearization process and Jacobian matrices enable the filter to handle nonlinearities and enhance its performance in a variety of real-world scenarios.
 
----
-
 ## Applications of EKF
-
+---
 EKF is widely employed in diverse applications within the field of robotics. In simultaneous localization and mapping (SLAM) for robots, EKF integrates sensor data, such as cameras and lidar, to estimate the robot's position and construct an environment map. Its effectiveness in dynamic scenarios, where nonlinearities arise from both robot motion and sensor measurements, makes EKF a preferred choice for enhancing robotic navigation capabilities. Additionally, EKF plays a crucial role in the control of robotic arms, managing nonlinearities originating from the intricate kinematics and dynamics of the robotic system. Through the estimation of joint angles and velocities using sensor feedback, EKF contributes to precise control and motion planning in robotic arm applications.
 
 Beyond robotics, EKF is instrumental in various aerospace and transportation domains. In spacecraft navigation, EKF addresses the challenges posed by nonlinearities in the gravitational field and orbital dynamics. It integrates measurements from instruments like star trackers, gyros, and accelerometers to accurately determine the spacecraft's position and orientation. Similarly, in aviation, EKF is utilized for aircraft state estimation, including position, velocity, and attitude. This is crucial for autonomous flight systems and enhancing navigation accuracy, especially in challenging conditions.
