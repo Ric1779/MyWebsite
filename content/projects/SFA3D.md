@@ -476,7 +476,7 @@ Traditional convolutional neural networks (CNNs), like VGG or ResNet, are engine
 
 FPNs address this limitation by incorporating a pyramidal feature hierarchy, where features are extracted at multiple scales simultaneously. The key components of an FPN architecture include:
 
-- **Backbone Network**: The backbone network, ResNet18 used in this project, serves as the feature extractor. It processes the input image and generates a set of feature maps at different spatial resolutions. For an in-depth understanding of the blocks and layers employed in ResNet architecture look into this [{{< mathjax/inline>}}<span style="color: #ffa700;">blog</span>{{< /mathjax/inline>}}]({{< ref "blogs/Kalman-Filter" >}}).
+- **Backbone Network**: The backbone network, ResNet18 used in this project, serves as the feature extractor. It processes the input image and generates a set of feature maps at different spatial resolutions. For an in-depth understanding of the blocks and layers employed in ResNet architecture look into this [{{< mathjax/inline>}}<span style="color: #ffa700;">blog</span>{{< /mathjax/inline>}}]({{< ref "blogs/ResNet" >}}).
 
 - **Pyramid Construction**: FPN constructs a feature pyramid by aggregating features from different layers of the backbone network. This is typically achieved through lateral connections and upsampling operations.
 
