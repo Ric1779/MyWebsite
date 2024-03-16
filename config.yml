@@ -70,7 +70,7 @@ params:
     subtitle: "A curious earthling looking for optimal solutions under the specified 
     constraints and trying to function at different levels of abstraction.
      In this chronicle, I share my expedition of discovery and learning in
-      the domains of computer vision, deep learning, and mathematics."
+      the domains of computer vision, autonomous driving, and deep learning."
     imageUrl: "images/soldier-modified.png"
     imageWidth: 120
     imageHeight: 120

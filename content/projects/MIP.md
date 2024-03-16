@@ -1,5 +1,5 @@
 ---
-title: "Mobile Inverted Pendulam : Control and Dynamics"
+title: "Mobile Inverted Pendulam : Control and Dynamics 🔁"
 date: 2024-02-20T23:15:00+09:00
 slug: MIP
 category: projects
