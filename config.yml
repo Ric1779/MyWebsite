@@ -80,6 +80,8 @@ params:
         url: blogs
       - name: Projects
         url: projects
+      - name: Resume
+        url: /docs/RESUME.pdf
 
   # home-info mode
   homeInfoParams:
@@ -99,6 +101,8 @@ params:
       url: "https://www.linkedin.com/in/ric1779/"
     - name: github
       url: "https://github.com/Ric1779"
+    - name: instagram
+      url: "https://www.instagram.com/crichardsbritto/"
     #- name: buymeacoffee
     #  url: "https://www.buymeacoffee.com/dataprofessor"
 
