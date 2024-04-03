@@ -1,5 +1,5 @@
 ---
-title: "SFA3D : LiDAR-Based 3D Object Detection 🚎"
+title: "SFA3D : LiDAR-Based 3D Object Detection 🚌"
 date: 2024-03-05T23:15:00+09:00
 slug: SFA3D
 category: projects

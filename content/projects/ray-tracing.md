@@ -1,5 +1,5 @@
 ---
-title: "Ray Tracing Essentials 🔦"
+title: "Ray Tracing Essentials in C++ 🔦"
 date: 2023-10-30T23:15:00+07:00
 slug: ray-tracing
 category: projects
