@@ -94,7 +94,7 @@ Integral of rs is zero by symmetry,
 {{< mathjax/inline>}}\[ V = 4\pi r^2 R\int_{-1}^{1} \sqrt{1 - s^2} ds \]{{< /mathjax/inline>}}
 
 Substituting {{< mathjax/inline>}}\(s=\sin(\theta)\){{< /mathjax/inline>}},
-{{< mathjax/inline>}}\[ V = 4\pi r^2 R\int_{-1}^{1} \cos^2(\theta) d\theta \]{{< /mathjax/inline>}}
+{{< mathjax/inline>}}\[ V = 4\pi r^2 R\int_{-\pi /2}^{\pi/2} \cos^2(\theta) d\theta \]{{< /mathjax/inline>}}
 
 The integral of {{< mathjax/inline>}}\(cos^2(\theta)\){{< /mathjax/inline>}} can be found using trigonometric identities. 
 
