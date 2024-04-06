@@ -1,6 +1,6 @@
 ---
 title: "Volume of Torus"
-date: 2024-03-30T23:17:00+09:00
+date: 2023-09-01T23:17:00+09:00
 slug: Torus
 category: Torus
 summary:
@@ -66,7 +66,7 @@ The volume of this differential element is approximated as the product of its di
 
 3. **Vertical Dimension ({{< mathjax/inline>}}\(dz\){{< /mathjax/inline>}})**: Extending a distance {{< mathjax/inline>}}\(dz\){{< /mathjax/inline>}} along the z-axis defines the height.
 
-Multiplying these dimensions gives the volume of the differential element: {{< mathjax/inline>}}\(dV = d\rho \times (\rho d\phi) \times dz = \rho d\rho d\phi dz\){{< /mathjax/inline>}}.
+Multiplying these dimensions gives the volume of the differential element: {{< mathjax/inline>}}\(dV = d\rho \times (\rho d\phi) \times dz = \rho \, d\rho \, d\phi \, dz\){{< /mathjax/inline>}}.
 
 #### Setting Up the Triple Integral
 

@@ -212,8 +212,6 @@ The Kalman Filter's sensitivity to initial conditions, especially in cases with 
 
 Despite its conceptual elegance, the Kalman Filter's real-time implementation can be computationally intensive, especially in applications with frequent updates and large state vectors. To meet real-time constraints, optimization and parallelization techniques may be necessary. Furthermore, assuming perfect knowledge of system dynamics in the state transition matrix may lead to model mismatch, as real-world dynamics can deviate from the model, impacting prediction accuracy. The Kalman Filter is designed to handle internal system dynamics but may struggle with disturbances or uncertainties not accounted for in the model, such as external disturbances, unmodeled dynamics, or sudden changes in system behavior. Striking a balance between over-optimization and adaptability is crucial to ensure robust performance across varying conditions.
 
-### Summary
-
 While the Kalman Filter is a powerful and widely applied tool, practitioners must be mindful of its assumptions and limitations. Understanding the characteristics of the system, appropriately modeling uncertainties, and choosing the right variant (e.g., EKF for nonlinear systems) are essential for achieving optimal filtering performance in diverse real-world scenarios.
 
 In the upcoming sections, we will explore the Extended Kalman Filter (EKF), an extension that addresses some of the limitations of the standard Kalman Filter, providing a more robust solution for nonlinear systems.
