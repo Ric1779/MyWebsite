@@ -6,7 +6,7 @@ category: BoW
 summary:
 description:
 cover:
-  image: 
+  image:
   alt:
   caption:
   relative: true

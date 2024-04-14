@@ -1,5 +1,5 @@
 ---
-title: "Understanding EWA Splatting"
+title: "EWA Splatting : A Deep Dive"
 date: 2024-04-05T23:17:00+09:00
 slug: EWASplatting
 category: EWASplatting

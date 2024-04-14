@@ -1,12 +1,12 @@
 ---
-title: "Volume of Torus"
+title: "Volume of Torus 🍩✨"
 date: 2023-09-01T23:17:00+09:00
 slug: Torus
 category: Torus
 summary:
 description:
 cover: 
-  image: "covers/torus.png"
+  image: "covers/torus.jpeg"
   alt:
   caption:
   relative: true

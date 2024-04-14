@@ -77,7 +77,7 @@ where {{< mathjax/inline>}}\( x \){{< /mathjax/inline>}} is the distance from th
 
 Gaussian Splatting is a powerful tool for transforming discrete data into a visually continuous form. It leverages the properties of the Gaussian function to ensure a smooth, natural-looking distribution of data across a given domain. By understanding and implementing this technique, data scientists and graphic artists can significantly enhance the clarity and effectiveness of their visual representations. As we move forward, the integration of Gaussian Splatting with spherical harmonics in rendering and visualization tasks opens up exciting possibilities for even more sophisticated and efficient computational techniques.
 
-## Integrating Spherical Harmonics with Gaussian Splatting
+## Integrating Spherical Harmonics with GS
 ---
 The integration of Spherical Harmonics with Gaussian Splatting presents a powerful combination for advanced visualization and computational techniques. This section delves into the theoretical framework behind this integration, explores the benefits it offers, and provides practical examples to illustrate its application.
 

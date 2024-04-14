@@ -66,11 +66,11 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "Namaste Namaskaram Vanakkam 🙏"
-    subtitle: "A curious earthling looking for optimal solutions under the specified 
+    title: "Vanakkam Namaste Namaskaram Welcome"
+    subtitle: "A curious earthling 🌱 looking for optimal solutions under the specified 
     constraints and trying to function at different levels of abstraction.
-     In this chronicle, I share my expedition of discovery and learning in
-      the domains of computer vision, autonomous driving, and deep learning."
+     In this chronicle, I share my expedition of learning in
+      the domains of computer vision, autonomous driving, deep learning, and computer graphics."
     imageUrl: "images/dp_5.png"
     imageWidth: 120
     imageHeight: 120
