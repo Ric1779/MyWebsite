@@ -15,7 +15,7 @@ draft: false
 ---
 
 ## Introduction
-
+---
 Welcome to my exploration of rasterization, the unsung hero of 3D rendering! While ray tracing often steals the spotlight, rasterization quietly powers the graphics you see in most 3D applications and games today. Yet, despite its prevalence, rasterization remains shrouded in mystery for many.
 
 Why is this the case? Well, rasterization hails from the early days of computer graphics, a time often overshadowed by the glitz and glamour of modern technology. But don't let its age fool you; rasterization is far from obsolete. In fact, it forms the backbone of GPU rendering, the technology driving today's visual experiences.
@@ -27,7 +27,7 @@ That's where I come in. Inspired by a quest for clarity, drawing from a wealth o
 This isn't just theory; it's about getting hands-on with rasterization, learning the essentials step by step. We'll dive into the core of rasterization, ready to tackle real-world rendering tasks. Plus, as we go, we might discover some neat tricks that change the way we think about computer graphics! Whether you're completely new to 3D rendering or just starting out on your journey, come along as we explore the fundamentals of rasterization. Together, we'll uncover the basics, making graphics knowledge more accessible and understandable for beginners.
 
 ## Foundational Principles of Rasterization
-
+---
 Before we dive into the intricacies of rasterization, it's essential to grasp its foundational principles. Rasterization, at its core, is the process of converting vector graphics or 3D models into raster images composed of pixels. This transformation is fundamental to the rendering pipeline, enabling the visualization of complex scenes in computer graphics.
 
 At its most basic level, rasterization involves breaking down continuous geometric shapes, such as triangles representing 3D surfaces, into discrete pixel elements. Each pixel on the screen corresponds to a specific location in the rendered image, and the color or attributes of that pixel are determined based on the geometry it covers.
@@ -39,7 +39,7 @@ Anti-aliasing techniques are another crucial aspect of rasterization, aimed at r
 Additionally, optimizing rasterization algorithms for performance is a constant endeavor in computer graphics. Techniques such as block-based rendering and fixed-point coordinates help improve efficiency and speed up the rendering process, making real-time graphics rendering feasible for applications like video games and simulations.
 
 ## 2D Triangle Bounding Boxes
-
+---
 In our journey to understand rasterization, we've delved into the foundational principles of this essential rendering technique. Now, armed with a deeper understanding of rasterization's inner workings, we're ready to optimize the process and unleash its full potential.
 
 At the heart of rasterization lies a crucial optimization strategy: the utilization of 2D triangle bounding boxes. In our previous discussions, we highlighted the inefficiency of naively iterating over all pixels in the image, regardless of whether they intersect with the rendered triangles. This approach becomes increasingly impractical as the complexity of the scene grows, with potentially hundreds to millions of triangles vying for screen space.
@@ -57,7 +57,7 @@ Looking ahead, we'll continue our exploration of rasterization, delving deeper i
 <!-- In the next chapter, we'll unravel the mysteries of coordinate transformations, shedding light on the intricate dance between camera and raster space. Join us as we navigate this intricate terrain, paving the way for smoother, more efficient rendering pipelines. -->
 
 ## Z-buffer/ Depth-buffer
-
+---
 As we navigate the intricacies of rasterization, a critical consideration emerges: the z-coordinate's pivotal role in determining depth accuracy. In our exploration of projecting vertices from camera space to raster space, we encounter the challenge of reconciling identical raster coordinates for vertices with differing depths.
 
 Imagine two vertices, P1 and P2, projected onto the canvas with identical raster coordinates. If P1 lies closer to the camera than P2, it should rightfully take precedence in the rendered image. However, without accounting for depth, P2 may erroneously overshadow P1, leading to visual inaccuracies.

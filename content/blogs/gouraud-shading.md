@@ -70,11 +70,11 @@ While interpolation techniques offer significant benefits for creating visually 
 
 Interpolation is a fundamental concept in computer graphics, enabling the generation of smooth, continuous visual effects across geometric primitives. By understanding the principles and applications of interpolation, graphics programmers and artists can create compelling and immersive digital experiences.
 
-## The Gouraud Shading Algorithm
----
+<!-- ## The Gouraud Shading Algorithm
+--- -->
 <!-- Gouraud shading, named after Henri Gouraud who introduced it in 1971, is a shading technique used in computer graphics to simulate the appearance of smooth surfaces by interpolating vertex colors across polygonal surfaces. This technique revolutionized rendering pipelines by providing a computationally efficient method for producing realistic shading effects. -->
 
-#### Overview of Gouraud Shading
+<!-- #### Overview of Gouraud Shading
 
 Gouraud shading operates on the principle of interpolating vertex attributes, such as color or intensity, across the surface of polygons to simulate the appearance of continuous shading. Unlike flat shading, which assigns a single color to each polygon, Gouraud shading calculates color values at the vertices of polygons and then smoothly blends these colors across the surface using interpolation.
 
@@ -114,7 +114,7 @@ Gouraud shading finds applications in various fields of computer graphics, inclu
 
 - **3D Modeling and Animation**: Gouraud shading facilitates the visualization of 3D models and animations by providing smooth and realistic shading effects, enhancing the overall visual fidelity of rendered scenes.
 
-In conclusion, the Gouraud shading algorithm has played a significant role in the advancement of computer graphics, providing a practical solution for achieving smooth shading effects with minimal computational overhead. Despite its limitations, Gouraud shading remains a popular choice for rendering polygonal surfaces in real-time graphics applications.
+In conclusion, the Gouraud shading algorithm has played a significant role in the advancement of computer graphics, providing a practical solution for achieving smooth shading effects with minimal computational overhead. Despite its limitations, Gouraud shading remains a popular choice for rendering polygonal surfaces in real-time graphics applications. -->
 
 ## Gouraud Interpolation Process
 ---
@@ -124,46 +124,63 @@ The Gouraud interpolation process is a key component of Gouraud shading, which a
 
 The Gouraud interpolation process begins with the calculation of vertex attributes, typically color values, at each vertex of a polygon. These vertex attributes are determined based on various factors, including the lighting model, material properties, and the position of light sources relative to the vertices. The computed vertex attributes represent the colors that will be interpolated across the surface of the polygon.
 
-
-
-{{< mathjax/inline>}}\[C(P) = \alpha \cdot C(A) + \beta \cdot C(B) + \gamma \cdot C(C)\]{{< /mathjax/inline>}}
-
+{{< mathjax/inline>}}\[C(P) = \alpha \cdot C(V_0) + \beta \cdot C(V_1) + \gamma \cdot C(V_2)\]{{< /mathjax/inline>}}
 
 In this equation:
 
 - {{< mathjax/inline>}}\( C(P) \){{< /mathjax/inline>}} represents the interpolated color at point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} within the triangle.
-- {{< mathjax/inline>}}\( C(A) \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( C(B) \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( C(C) \){{< /mathjax/inline>}} are the colors at the vertices {{< mathjax/inline>}}\( A \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( B \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( C \){{< /mathjax/inline>}} of the triangle, respectively.
+- {{< mathjax/inline>}}\( C(V_0) \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( C(V_1) \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( C(V_2) \){{< /mathjax/inline>}} are the colors at the vertices {{< mathjax/inline>}}\( V_0 \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( V_1 \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( V_2 \){{< /mathjax/inline>}} of the triangle, respectively.
 - {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} are the barycentric coordinates of point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}}, representing its relative position with respect to the vertices of the triangle.
 
 This equation computes the interpolated color at any point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} within the triangle based on its barycentric coordinates and the colors at the triangle's vertices.
 
 Mathematical equations calculating the values of {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} using barycentric coordinates:
 
-
 {{< mathjax/inline >}}
-\[ \alpha = \frac{(y_B - y_C)(x - x_C) + (x_C - x_B)(y - y_C)}{(y_B - y_C)(x_A - x_C) + (x_C - x_B)(y_A - y_C)} \]
+\[ \alpha = \frac{(y_{V_1} - y_{V_2})(x - x_{V_2}) + (x_{V_2} - x_{V_1})(y - y_{V_2})}{(y_{V_1} - y_{V_2})(x_{V_0} - x_{V_2}) + (x_{V_2} - x_{V_1})(y_{V_0} - y_{V_2})} \]
 {{< /mathjax/inline >}}
 
 {{< mathjax/inline >}}
-\[ \beta = \frac{(y_C - y_A)(x - x_C) + (x_A - x_C)(y - y_C)}{(y_B - y_C)(x_A - x_C) + (x_C - x_B)(y_A - y_C)} \]
+\[ \beta = \frac{(y_{V_2} - y_{V_0})(x - x_{V_2}) + (x_{V_0} - x_{V_2})(y - y_{V_2})}{(y_{V_1} - y_{V_2})(x_{V_0} - x_{V_2}) + (x_{V_2} - x_{V_1})(y_{V_0} - y_{V_2})} \]
 {{< /mathjax/inline >}}
 
 {{< mathjax/inline >}}
 \[ \gamma = 1 - \alpha - \beta \]
 {{< /mathjax/inline >}}
 
-
-
 In these equations:
 
-- {{< mathjax/inline>}}\( (x_A, y_A) \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( (x_B, y_B) \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( (x_C, y_C) \){{< /mathjax/inline>}} are the coordinates of the vertices {{< mathjax/inline>}}\( A \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( B \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( C \){{< /mathjax/inline>}} of the triangle, respectively.
+- {{< mathjax/inline>}}\( (x_{V_0}, y_{V_0}) \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( (x_{V_1}, y_{V_1}) \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( (x_{V_2}, y_{V_2}) \){{< /mathjax/inline>}} are the coordinates of the vertices {{< mathjax/inline>}}\( V_0 \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( V_1 \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( V_2 \){{< /mathjax/inline>}} of the triangle, respectively.
 - {{< mathjax/inline>}}\( (x, y) \){{< /mathjax/inline>}} are the coordinates of the point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} for which we want to calculate the barycentric coordinates.
 - {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} are the barycentric coordinates of point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}}, representing its relative position with respect to the vertices of the triangle.
 
 These equations calculate the values of {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} based on the coordinates of the vertices and the point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}}. These values are then used in the Gouraud interpolation equation to compute the interpolated color at point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} within the triangle.
 
-The barycentric coordinates {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} represent the relative areas of the sub-triangles formed by a point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edges of the triangle. These coordinates quantify the position of the point within the triangle by expressing its proportions with respect to the areas of these sub-triangles. Specifically, {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}} represents the area of the sub-triangle formed by point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edge opposite vertex {{< mathjax/inline>}}\( A \){{< /mathjax/inline>}}, while {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}} represents the area of the sub-triangle formed by point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edge opposite vertex {{< mathjax/inline>}}\( B \){{< /mathjax/inline>}}. Similarly, {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} represents the area of the sub-triangle formed by point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edge opposite vertex {{< mathjax/inline>}}\( C \){{< /mathjax/inline>}}. By calculating these barycentric coordinates, we can determine the weighted contributions of each vertex's attributes to the interpolated value at point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}}, enabling the smooth shading effects achieved through Gouraud interpolation.
+{{< rawhtml>}}
+<p align="center">
+  <img src="../images/gouraud/barycentric.png" alt="Image description" class="img-fluid" style="max-width: 50%; height: auto; border-radius: 10px; width: 100%"/>
+</p>
+<p align="center">
+  <em>Figure 1: Measuring barycentric coordinates</em>
+</p>
+{{< /rawhtml>}}
 
+The barycentric coordinates {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} represent the relative areas of the sub-triangles formed by a point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edges of the triangle. These coordinates quantify the position of the point within the triangle by expressing its proportions with respect to the areas of these sub-triangles. Specifically, {{< mathjax/inline>}}\( \alpha \){{< /mathjax/inline>}} represents the area of the sub-triangle formed by point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edge opposite vertex {{< mathjax/inline>}}\( V_0 \){{< /mathjax/inline>}}, while {{< mathjax/inline>}}\( \beta \){{< /mathjax/inline>}} represents the area of the sub-triangle formed by point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edge opposite vertex {{< mathjax/inline>}}\( V_1 \){{< /mathjax/inline>}}. Similarly, {{< mathjax/inline>}}\( \gamma \){{< /mathjax/inline>}} represents the area of the sub-triangle formed by point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}} and the edge opposite vertex {{< mathjax/inline>}}\( V_2 \){{< /mathjax/inline>}}. By calculating these barycentric coordinates, we can determine the weighted contributions of each vertex's attributes to the interpolated value at point {{< mathjax/inline>}}\( P \){{< /mathjax/inline>}}, enabling the smooth shading effects achieved through Gouraud interpolation.
+
+{{< rawhtml>}}
+<p align="center">
+  <img src="../images/gouraud/pseudo.png" alt="Image description" class="img-fluid" style="max-width: 70%; height: auto; border-radius: 10px; width: 100%"/>
+</p>
+<p align="center">
+  <em>Figure 2: Pseudo Code for Gouraud Interpolation</em>
+</p>
+{{< /rawhtml>}}
+
+{{< mathjax/inline>}}\( f(x, y)\){{< /mathjax/inline>}} is the implicit equation for the line, which looks like this:
+
+{{< mathjax/inline>}}\[ f(x, y) ≡ (y_0 - y_1)x + (x_1 - x_0)y + x_0y_1 - x_1y_0 = 0 \]{{< /mathjax/inline>}}
+
+Here, {{< mathjax/inline>}}\( (x_0, y_0) \){{< /mathjax/inline>}} and {{< mathjax/inline>}}\( (x_1, y_1) \){{< /mathjax/inline>}} represent the endpoints of the line and {{< mathjax/inline>}}\( x_0 ≤ x_1 \){{< /mathjax/inline>}}.
 #### Interpolation Between Vertices
 
 Once the vertex attributes are calculated, the next step involves interpolating these attributes across the surface of the polygon. Gouraud shading typically employs barycentric interpolation to smoothly blend the vertex attributes (colors) across the polygon's surface. Barycentric interpolation calculates the color value at each pixel within the polygon based on its position relative to the vertices, ensuring a gradual transition of color across the surface.
@@ -192,13 +209,17 @@ The Gouraud interpolation process plays a crucial role in achieving smooth shadi
 ---
 In computer graphics, various shading techniques are employed to simulate the interaction of light with surfaces and create realistic rendering effects. Gouraud shading, while widely used for its efficiency and smooth shading results, differs from other shading techniques in several aspects. Let's explore a comparison between Gouraud shading and some other commonly used shading techniques:
 
-#### Gouraud Shading vs. Flat Shading
+#### Gouraud Shading vs. Flat Shading vs. Phong Shading vs. Lambertian Shading
 
 - **Gouraud Shading**: Gouraud shading interpolates color values across polygonal surfaces, resulting in smooth shading transitions. It calculates color values at the vertices and interpolates them across the surface, providing a more visually appealing appearance compared to flat shading.
 
 - **Flat Shading**: Flat shading assigns a single color to each polygon, typically based on the color of one of its vertices or a uniform color for the entire polygon. This results in a flat appearance with distinct shading boundaries between polygons, lacking the smoothness achieved by Gouraud shading.
 
-#### Gouraud Shading vs. Phong Shading
+- **Phong Shading**: Phong shading calculates color values for each pixel by interpolating normals across polygons and evaluating the lighting model at each pixel. This approach enables accurate representation of specular highlights and detailed shading effects, but it is computationally more expensive compared to Gouraud shading, making it less suitable for real-time rendering applications.
+
+- **Lambertian Shading**: Lambertian shading computes color values based on the angle between the surface normal and the light direction, without considering specular reflections. While Lambertian shading provides accurate diffuse lighting, it does not capture specular highlights or other complex shading effects, making it less versatile than Gouraud shading for certain applications.
+
+<!-- #### Gouraud Shading vs. Phong Shading
 
 - **Gouraud Shading**: Gouraud shading focuses on interpolating color values across polygons, providing smooth shading transitions. It computes color values at vertices and interpolates them across the surface, making it computationally efficient for real-time rendering. However, Gouraud shading may lack accuracy in representing specular highlights due to interpolation.
 
@@ -208,15 +229,15 @@ In computer graphics, various shading techniques are employed to simulate the in
 
 - **Gouraud Shading**: Gouraud shading interpolates color values across polygons, providing smooth shading effects. It calculates color values at vertices and interpolates them across the surface, offering a balance between visual quality and computational efficiency. However, it may produce less accurate shading compared to Lambertian shading.
 
-- **Lambertian Shading**: Lambertian shading computes color values based on the angle between the surface normal and the light direction, without considering specular reflections. While Lambertian shading provides accurate diffuse lighting, it does not capture specular highlights or other complex shading effects, making it less versatile than Gouraud shading for certain applications.
+- **Lambertian Shading**: Lambertian shading computes color values based on the angle between the surface normal and the light direction, without considering specular reflections. While Lambertian shading provides accurate diffuse lighting, it does not capture specular highlights or other complex shading effects, making it less versatile than Gouraud shading for certain applications. -->
 
-#### Gouraud Shading vs. Phong Shading
+<!-- #### Gouraud Shading vs. Phong Shading
 
 - **Gouraud Shading**: Gouraud shading interpolates color values across polygonal surfaces, providing smooth shading transitions. It calculates color values at the vertices and interpolates them across the surface, making it computationally efficient for real-time rendering. However, Gouraud shading may lack accuracy in representing specular highlights due to interpolation.
 
-- **Phong Shading**: Phong shading calculates color values for each pixel by interpolating normals across polygons and evaluating the lighting model at each pixel. This approach enables accurate representation of specular highlights and detailed shading effects, but it is computationally more expensive compared to Gouraud shading, making it less suitable for real-time rendering applications.
+- **Phong Shading**: Phong shading calculates color values for each pixel by interpolating normals across polygons and evaluating the lighting model at each pixel. This approach enables accurate representation of specular highlights and detailed shading effects, but it is computationally more expensive compared to Gouraud shading, making it less suitable for real-time rendering applications. -->
 
-#### Advantages and Limitations of Gouraud Shading
+<!-- #### Advantages and Limitations of Gouraud Shading
 
 - **Advantages**:
   - Smooth shading transitions across polygonal surfaces.
@@ -228,7 +249,7 @@ In computer graphics, various shading techniques are employed to simulate the in
   - Vulnerable to shading artifacts, especially along edges and sharp features.
   - Dependent on vertex density for visual quality, which can impact performance.
 
-In summary, Gouraud shading offers a balance between visual quality and computational efficiency, making it a popular choice for real-time rendering applications. While it may not capture certain shading effects as accurately as other techniques like Phong shading, its efficiency and smooth shading transitions make it well-suited for a wide range of graphics applications. Understanding the differences between Gouraud shading and other shading techniques helps developers choose the most suitable approach for their rendering needs.
+In summary, Gouraud shading offers a balance between visual quality and computational efficiency, making it a popular choice for real-time rendering applications. While it may not capture certain shading effects as accurately as other techniques like Phong shading, its efficiency and smooth shading transitions make it well-suited for a wide range of graphics applications. Understanding the differences between Gouraud shading and other shading techniques helps developers choose the most suitable approach for their rendering needs. -->
 
 ## Applications of Gouraud Interpolation
 ---
