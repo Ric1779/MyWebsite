@@ -1,5 +1,5 @@
 ---
-title: "Gouraud Interpolation"
+title: "Gouraud Interpolation ∿"
 date: 2024-04-07T23:17:00+09:00
 slug: gauraudShading
 category: gauraudShading

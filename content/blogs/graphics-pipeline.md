@@ -130,7 +130,7 @@ When a plane intersects a line segment, we can calculate the precise point of in
 
 {{< rawhtml>}}
 <p align="center">
-  <img src="../images/graphics_pipeline/clipping.png" alt="Image description" class="img-fluid" style="max-width: 50%; height: auto; border-radius: 10px; width: 100%"/>
+  <img src="../images/graphics_pipeline/clipping.png" alt="Image description" class="img-fluid" style="max-width: 40%; height: auto; border-radius: 10px; width: 100%"/>
 </p>
 <p align="center">
   <em>Figure 3: A polygon is clipped against a clipping plane. The portion “inside” the plane is retained.</em>
