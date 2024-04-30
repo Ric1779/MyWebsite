@@ -1,6 +1,6 @@
 ---
-title: "About"
-date: 2022-04-09T23:15:00+07:00
+title: "About🧗🏽"
+date: 2024-04-09T23:15:00+07:00
 slug: about
 category:
 summary:
@@ -14,20 +14,6 @@ showtoc: false
 draft: false
 ---
 
-In the daytime, I am a passionate computer vision engineer adept at seamlessly blending the realms of deep learning and visual perception. Proficient in leveraging the power of deep learning algorithms for SLAM, 3D scene reconstruction, and object detection/tracking, I am committed to exploring the frontiers of artificial intelligence and its applications in computer vision, with a genuine passion for advancing visual perception technology.
+Hello there!👋 I'm Richards Britto, a Computer Vision enthusiast deeply passionate about exploring the exciting territories of 3D scene reconstruction and SLAM. Armed with a freshly earned master’s degree in Image Analysis and Machine Learning from Uppsala University, I dive headfirst into the world of technology. Beyond my tech pursuits, I lead a well-rounded life as a versatile athlete. You might catch me on the field, representing the fifth division football club, IK Apollon ⚽, or dedicating myself to strength training with powerlifting, boulder climbing, and calisthenics🏋🏽🤸🏽. 
 
-At night, I'm a content creator developing tutorials in data science for the following platforms:
-- 📺 **YouTube**: [**Data Professor**](https://youtube.com/dataprofessor/), [**Coding Professor**](https://youtube.com/codingprofessor/)
-- 📝 [**Medium Blogs**](https://data-professor.medium.com/).
-- 💻 [**GitHub**](https://github.com/dataprofessor/)
-
-In my previous role, I was an Associate Professor of Bioinformatics carrying out research in computational drug discovery:
-- [**Google Scholar**](https://scholar.google.com/citations?user=df-l7zQAAAAJ&hl=en)
-- [**ORCID**](https://orcid.org/0000-0003-1040-663X)
-- [**SCOPUS**](https://www.scopus.com/authid/detail.uri?authorId=12039071300)
-- [**ResearchGate**](https://www.researchgate.net/profile/Chanin-Nantasenamat-2)
-- **GitHub**: [**chaninn**](https://github.com/chaninn/), [**chaninlab**](https://github.com/chaninlab/)
-
-You can also connect with me at the following social platforms:
-- [**Twitter**](https://twitter.com/thedataprof)
-- [**LinkedIn**](https://www.linkedin.com/in/chanin-nantasenamat/)
+Furthermore, I've a passion for 3D modeling, sketching, autonomous driving, CG, and XR. On top of that, I proudly wield a lightning-fast typing speed of [110 WPM](https://monkeytype.com/profile/Ric1779)⚡, a skill finely honed over a century of intense focus, secluded in the sanctum of a digital temple 🧘🏽. It's this blend of technical prowess, diverse interests, and a relentless drive for improvement that fuels my journey in the ever-evolving landscape of technology and innovation.

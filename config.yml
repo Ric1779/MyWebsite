@@ -68,9 +68,9 @@ params:
     enabled: true # needs to be explicitly set
     title: "Vanakkam Namaste Namaskaram Welcome"
     subtitle: "A curious earthling 🌱 looking for optimal solutions under the specified 
-    constraints and trying to function at different levels of abstraction.
-     In this chronicle, I share my expedition of learning in
-      the domains of computer vision, autonomous driving, deep learning, and computer graphics."
+    constraints and trying to function at different levels of abstraction. In this chronicle, 
+    I share my expedition of learning in the domains of computer vision and deep learning."
+
     imageUrl: "images/dp_5.png"
     imageWidth: 120
     imageHeight: 120
@@ -91,12 +91,12 @@ params:
     Some of you may know me as the **Data Professor**."
 
   socialIcons:
-    #- name: youtube
-    #  url: "http://youtube.com/dataprofessor"
-    #- name: medium
-    #  url: "https://medium.com/@data-professor"
-    #- name: twitter
-    #  url: "https://twitter.com/thedataprof"
+    # - name: youtube
+    #   url: "http://youtube.com/dataprofessor"
+    # - name: medium
+    #   url: "https://medium.com/@data-professor"
+    # - name: twitter
+    #   url: "https://twitter.com/thedataprof"
     - name: linkedin
       url: "https://www.linkedin.com/in/ric1779/"
     - name: github
@@ -139,26 +139,26 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    #- identifier: about
-    #  name: About
-    #  url: /about/
-    #  weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
     - identifier: blog
       name: Blogs
       url: /blogs/
-      weight: 1   
+      weight: 2   
     - identifier: projects
       name: Projects
       url: /projects/
-      weight: 2
+      weight: 3
     - identifier: 3D Modelling
       name: 3D Modelling
       url: /3D Modelling/
-      weight: 3
+      weight: 4
     - identifier: Drawing
       name: Drawing
       url: /Drawing/
-      weight: 4
+      weight: 5
     #- identifier: tags
     #  name: tags
     #  url: /tags/
