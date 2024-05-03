@@ -16,11 +16,11 @@ draft: false
 
 ## Introduction
 ---
-The Mobile Inverted Pendulum (MIP) serves as an excellent introduction in the understanding of control systems and robotics. Comprising an inverted pendulum mounted on a wheel, the MIP exemplifies an inherently unstable system that constantly seeks equilibrium. This characteristic instability necessitates the application of advanced control methodologies to ensure stability and enable precise maneuvering. This project was implemented as part of the Robotics Specialization in Coursera.
+The Mobile Inverted Pendulum (MIP) serves as an excellent introduction in the understanding of control systems and robotics. Comprising an inverted pendulum mounted on a wheel, the MIP exemplifies an inherently unstable system that constantly seeks equilibrium. This characteristic instability necessitates the application of advanced control methodologies to ensure stability and enable precise maneuvering. This project was implemented as part of the [{{< mathjax/inline>}}<span style="color: #ffa700">Robotics Specialization in Coursera</span>{{< /mathjax/inline>}}](https://www.coursera.org/specializations/robotics?utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_meta-front-end-developer_meta_ftcof_professional-certificates_arte_feb_24_dr_geo-multi_pmax_gads_lg-all&campaignid=21045376738&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&adposition=&creativeid=&hide_mobile_promo&gad_source=1&gclid=Cj0KCQjwltKxBhDMARIsAG8KnqW6-NwVWxao-B5xSPRXH8JHQLgJzT3Kc6nCuY218nqBH32jBKM3Tg4aAn5wEALw_wcB).
 
 In the broader context of robotics and automation, mastering control systems is crucial for achieving desired outcomes in various applications. The MIP, with its dynamic and unpredictable nature, serves as an ideal testbed for exploring sophisticated control strategies that can be extended to other complex robotic systems.
 
-This post delves into the world of control systems applied to the MIP, with a particular focus on the integration of an [{{< mathjax/inline>}}<span style="color: #ffa700;">Extended Kalman Filter (EKF)</span>{{< /mathjax/inline>}}]({{< ref "blogs/Kalman-Filter" >}}) for state estimation and a {{< mathjax/inline>}}<span style="color: #0084a5;">Proportional-Integral-Derivative (PID)</span>{{< /mathjax/inline>}} controller for stabilization. Through the lens of {{< mathjax/inline>}}<span style="color: #0084a5;">Lagrangian mechanics</span>{{< /mathjax/inline>}}, the fundamental principles governing the motion of the MIP are explored, laying the groundwork for the subsequent design and implementation of a robust control system.
+This post delves into the world of control systems applied to the MIP, with a particular focus on the integration of an [{{< mathjax/inline>}}<span style="color: #ffa700;">Extended Kalman Filter (EKF)</span>{{< /mathjax/inline>}}]({{< ref "blogs/Kalman-Filter" >}}) for state estimation and a {{< mathjax/inline>}}<span style="color: #0084a5">Proportional-Integral-Derivative (PID)</span>{{< /mathjax/inline>}} controller for stabilization. Through the lens of {{< mathjax/inline>}}<span style="color: #0084a5;">Lagrangian mechanics</span>{{< /mathjax/inline>}}, the fundamental principles governing the motion of the MIP are explored, laying the groundwork for the subsequent design and implementation of a robust control system.
 
 As we navigate through the various components of the control system, from deriving the equation of motion using Lagrangian mechanics to employing MATLAB's ode45 function to solve the differential equation for simulation, we aim to provide a comprehensive understanding of the intricacies involved. This post seeks to not only elucidate the theoretical foundations but also guide readers through the practical implementation, showcasing the synergy between mathematical modeling and real-world application.
 
@@ -43,13 +43,13 @@ The utilization of MATLAB's ode45 function for solving the differential equation
 ---
 ### Explanation of the Physical Principles using Lagrangian Mechanics
 
-Lagrangian mechanics offers a fresh perspective on understanding motion, departing from the conventional Newtonian mechanics which relies on forces to a focus on energy and optimization. In this framework, motion is conceptualized as an optimization process, with the Lagrangian (L), defined as the difference between kinetic energy (T) and potential energy (V), playing a central role. The principle of stationary action dictates that physical systems follow trajectories that minimize the action, computed as the integral over time of the Lagrangian along a given trajectory. This optimization process allows for the prediction of motion by effectively balancing kinetic and potential energies.
+Lagrangian mechanics offers a fresh perspective on understanding motion, departing from the conventional Newtonian mechanics which relies on forces to a focus on energy and optimization. In this framework, motion is conceptualized as an optimization process, with the Lagrangian (L), defined as the difference between kinetic energy (T) and potential energy (V), playing a central role. The {{< mathjax/inline>}}<span style="color: #0084a5">principle of stationary action</span>{{< /mathjax/inline>}} dictates that physical systems follow trajectories that minimize the action, computed as the integral over time of the Lagrangian along a given trajectory. This optimization process allows for the prediction of motion by effectively balancing kinetic and potential energies.
 
 The Lagrangian, specifically expressed as L = T - V in classical mechanics, is chosen for its ability to succinctly encapsulate information about the dynamics of a system. The preference for T - V over T + V is justified by the dynamic nature of potential energy, capturing changes in the system rather than its absolute influence on motion. The Lagrangian formulation consistently produces Newton's second law, F = ma, showcasing its effectiveness in predicting the trajectories of physical systems through energy considerations and the principle of stationary action.
 
 The principle of stationary action is elucidated as the foundational concept underlying Lagrangian mechanics. The action, defined as the integral of the Lagrangian over time, is a measure of a system's trajectory through space and time. The principle dictates that the real trajectory a system takes is the one where the action is stationary, expressed mathematically as the functional differential δA = 0. This means that slight variations in the action, or infinitesimal changes in the trajectory, do not affect the overall value of the action. While the mathematical formulation is precise, the intuitive understanding of stationarity draws parallels to stationary points in basic calculus.
 
-{{< mathjax/inline>}}<span style="color: #ffa770">The motivation behind why physical systems adhere to the principle of stationary action remains a fascinating yet unanswered question.</span>{{< /mathjax/inline>}} Despite the lack of a definitive answer, there is a sense of reason in the idea that the universe tends to optimize its behavior, striving towards equilibrium states. In a similar vein to thermodynamics, where systems evolve towards thermal equilibrium, the principle of stationary action suggests that physical systems tend to evolve towards a state where the action is at a stationary point or equilibrium. Though somewhat abstract, this principle is observed across various phenomena in the universe, prompting its acceptance as a postulate in Lagrangian mechanics.
+{{< mathjax/inline>}}<span style="color: #0084a5">The motivation behind why physical systems adhere to the principle of stationary action remains a fascinating yet unanswered question.</span>{{< /mathjax/inline>}} Despite the lack of a definitive answer, there is a sense of reason in the idea that the universe tends to optimize its behavior, striving towards equilibrium states. In a similar vein to thermodynamics, where systems evolve towards thermal equilibrium, the principle of stationary action suggests that physical systems tend to evolve towards a state where the action is at a stationary point or equilibrium. Though somewhat abstract, this principle is observed across various phenomena in the universe, prompting its acceptance as a postulate in Lagrangian mechanics.
 
 Lagrangian mechanics provides a powerful framework for understanding the dynamics of mechanical systems, emphasizing the concept of generalized coordinates and the principle of least action. In the case of the MIP, we will explore the Lagrangian formulation to derive the equation of motion.
 
@@ -95,12 +95,12 @@ Lagrangian mechanics provides a powerful framework for understanding the dynamic
 
    {{< mathjax/inline>}}\(\tau\){{< /mathjax/inline>}} represents the wheel torque/input between wheel and the body. This equation, once solved, provides the equation of motion for the inverted pendulum.
 
-- **First Derivative of position vector p:**
+- **First Derivative of position vector p with time:**
     {{< mathjax/block>}}
     \[\dot{p} = \begin{bmatrix} r(\dot{\phi} + \dot{\theta}) + lcos(\phi)\dot{\phi} \\ -lsin(\phi)\dot{\phi} \end{bmatrix}\] 
     {{< /mathjax/block>}}
 
-- **Finding {{< mathjax/inline>}}\( \dot{p}^Tp\){{< /mathjax/inline>}}:**
+- **Finding {{< mathjax/inline>}}\( \dot{p}^T\dot{p}\){{< /mathjax/inline>}}:**
     {{< mathjax/block>}}
     \[\dot{p}^T\dot{p} = r^2(\dot{\theta} + \dot{\phi})^2 + 2r(\dot{\theta} + \dot{\phi})lcos(\phi)\dot{\phi} + l^2cos^2(\phi)\dot{\phi}^2 + l^2sin^2(\phi)\dot{\phi}^2\] 
     {{< /mathjax/block>}}
@@ -199,7 +199,7 @@ The control system design involves the development of a controller that utilizes
 
 The measurement function or the mixing matrix is a non-linear function, which is as follows:
 {{< mathjax/block>}}
-\[ z_k = \begin{bmatrix} sin(\phi) \\ cos(\phi) \\ \dot(\phi) \end{bmatrix} =:h(x_k)\]
+\[ z_k = \begin{bmatrix} sin(\phi) \\ cos(\phi) \\ \dot\phi \end{bmatrix} =:h(x_k)\]
 {{< /mathjax/block>}}
 
 ### Extended Kalman Filter (EKF) Update:
