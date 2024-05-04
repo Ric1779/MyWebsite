@@ -1,6 +1,6 @@
 ---
 title: "Gaussian Splatting 🔔"
-date: 2024-04-01T23:15:00+09:00
+date: 2024-05-01T23:15:00+09:00
 slug: GS    
 category: GS
 summary:
@@ -11,7 +11,7 @@ cover:
   caption:
   relative: true
 showtoc: true
-draft: true
+draft: false
 ---
 
 ## Introduction
