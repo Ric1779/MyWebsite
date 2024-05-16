@@ -20,15 +20,18 @@ Furthermore, I've a passion for 3D modeling, sketching, autonomous driving, CG, 
 
 In contemplating life’s grand questions, I’ve come to believe that the only antidote to nihilism is to trick our brains into becoming obsessed with something meaningful. Whether it’s delving into the intricacies of computer vision or exploring the depths of human emotions, finding purpose in our pursuits is essential. For me, it’s the fusion of technology, athleticism, and philosophical inquiry that ignites my passion and drives me forward. As a wannabe vegan🌱 currently on a pescatarian diet🐟, I strive to make mindful choices that align with my values and everyone's well-being. Through this journey, I’ve discovered that the pursuit of excellence and the cultivation of meaningful connections with others are the true essence of a fulfilled existence.
 
-## Technical Skills:
+## Technical Skills
 
 {{< gallery match="skills/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="100" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
 
-## Vicarious Voyages:
+## Vicarious Voyages
 
 {{< gallery match="movies/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="250" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
 
-## My Life in Frames:
+## My Life in Frames
 
 {{< gallery match="frames/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="250" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
 
+## Melodies That Move Me
+
+{{< gallery match="songs/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="200" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
