@@ -18,7 +18,7 @@ draft: false
 ---
 #### Overview of Gaussian Splatting
 
-In this project, we explore Gaussian splatting, a rendering technique predominantly utilized in computer graphics and visualization. Gaussian splatting differs from traditional rendering methods by using Gaussian distributions to project geometric primitives. This approach enables the creation of images with high detail and realism, which is particularly beneficial in fields like medical imaging and scientific visualization where detail and accuracy are crucial.
+In this project, we explore Gaussian splatting, a rendering technique predominantly utilized in computer graphics and visualization. Gaussian splatting differs from traditional rendering methods by using Gaussian distributions to project geometric primitives. This approach enables the creation of images with high detail and realism, which is particularly beneficial in fields like medical imaging and scientific visualization where detail and accuracy are crucial. This project is a reimplementation of an open-source project available [here](https://github.com/hbb1/torch-splatting). Reimplementing such projects helps me understand the nuances involved, allowing me to gain deeper insights and make potential improvements.
 
 Gaussian splatting maps data points, which could represent various entities from image pixels to scientific data, onto a visualization space using Gaussian functions. This technique results in a smoother and more continuous representation of data, as opposed to the pixelated or discretized outputs commonly produced by traditional methods.
 
@@ -315,12 +315,12 @@ The provided Python script is integral to understanding how spherical harmonics 
 ---
 #### Functions Overview
 
-- `RGB2SH(rgb)`: This function converts RGB color values into spherical harmonics coefficients. The transformation is performed by normalizing the RGB values (shifting by -0.5) and scaling by a constant \( C0 \).
+- `RGB2SH(rgb)`: This function converts RGB color values into spherical harmonics coefficients. The transformation is performed by normalizing the RGB values (shifting by -0.5) and scaling by a constant {{< mathjax/inline>}}\( C0 \){{< /mathjax/inline>}}.
   
-- `SH2RGB(sh)`: This function converts spherical harmonics coefficients back into RGB color values. It essentially reverses the operation of `RGB2SH`, scaling by \( C0 \) and then shifting by +0.5 to retrieve the original RGB values.
+- `SH2RGB(sh)`: This function converts spherical harmonics coefficients back into RGB color values. It essentially reverses the operation of `RGB2SH`, scaling by {{< mathjax/inline>}}\( C0 \){{< /mathjax/inline>}} and then shifting by +0.5 to retrieve the original RGB values.
 
 #### Constants and Coefficients
-The script defines several constants, \( C0 \), \( C1 \), \( C2 \), \( C3 \), and \( C4 \), which are used to scale the SH coefficients during the color calculations. These constants are derived from the properties of the spherical harmonics functions and their normalization in computer graphics.
+The script defines several constants, {{< mathjax/inline>}}\( C0 , C1 , C2 , C3 \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( C4 \){{< /mathjax/inline>}}, which are used to scale the SH coefficients during the color calculations. These constants are derived from the properties of the spherical harmonics functions and their normalization in computer graphics.
 
 #### Spherical Harmonics Evaluation (`eval_sh`)
 This is the central function where the spherical harmonics are evaluated given specific directions. The function takes three arguments:
@@ -328,10 +328,10 @@ This is the central function where the spherical harmonics are evaluated given s
 - `sh`: An array of spherical harmonics coefficients.
 - `dirs`: Unit directions for which the SH values need to be computed.
 
-The function works by first multiplying the zeroth SH coefficient with \( C0 \). If higher degrees are involved, it incrementally calculates the influence of each additional degree using the provided unit directions and corresponding SH coefficients. The complexity and the number of terms increase with the degree of the harmonics, involving products of the direction components and the corresponding coefficients.
+The function works by first multiplying the zeroth SH coefficient with {{< mathjax/inline>}}\( C0 \){{< /mathjax/inline>}}. If higher degrees are involved, it incrementally calculates the influence of each additional degree using the provided unit directions and corresponding SH coefficients. The complexity and the number of terms increase with the degree of the harmonics, involving products of the direction components and the corresponding coefficients.
 
 For instance, for the first degree:
-- It uses the x, y, z components of the direction to modify the result based on \( C1 \) scaled SH coefficients.
+- It uses the x, y, z components of the direction to modify the result based on {{< mathjax/inline>}}\( C1 \){{< /mathjax/inline>}} scaled SH coefficients.
 
 For the second and higher degrees:
 - Products of direction components (like {{< mathjax/inline>}}\( x \cdot y \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( x^2 \){{< /mathjax/inline>}}, etc.) are used alongside the {{< mathjax/inline>}}\( C2 \){{< /mathjax/inline>}}, {{< mathjax/inline>}}\( C3 \){{< /mathjax/inline>}}, and {{< mathjax/inline>}}\( C4 \){{< /mathjax/inline>}} coefficients to account for the increased complexity of higher degree harmonics.
