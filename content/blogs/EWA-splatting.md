@@ -1,6 +1,6 @@
 ---
-title: "Revisiting EWA Splatting"
-date: 2024-05-23T23:17:00+09:00
+title: "EWA Splatting Simplified"
+date: 2024-05-26T23:17:00+09:00
 slug: EWASplatting
 category: EWASplatting
 summary:
@@ -23,3 +23,5 @@ Imagine you're trying to create a digital sculpture using thousands of tiny poin
 EWA Splatting works by treating each point as a small, elliptical patch rather than a single dot. When rendering, these patches overlap and blend smoothly, resulting in a continuous and detailed surface. This technique not only improves the visual quality but also handles issues like perspective distortion and varying point densities effectively.
 
 In essence, EWA Splatting enhances the process of turning point-based data into beautiful, lifelike images. It is especially valuable in fields like scientific visualization, virtual reality, and any application where detailed 3D models are essential. By understanding and applying EWA Splatting, we can achieve more accurate and visually pleasing renderings, pushing the boundaries of what is possible in digital graphics.
+
+In this blog, I'll be delving into the official paper on EWA Splatting and will strive to simplify its concepts so that anyone reading this post can gain a comprehensive overview. This understanding will be valuable for future work in related projects, enabling you to create more refined and visually impressive 3D models.

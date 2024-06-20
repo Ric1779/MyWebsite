@@ -28,10 +28,10 @@ In contemplating life’s grand questions, I’ve come to believe that the only 
 
 {{< gallery match="movies/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="250" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
 
+## Melodies That Touch my Soul
+
+{{< gallery match="songs/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="200" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
+
 ## My Life in Frames
 
 {{< gallery match="frames/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="250" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
-
-## Melodies That Move Me
-
-{{< gallery match="songs/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="200" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
