@@ -42,7 +42,7 @@ params:
   # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: light # auto, dark, light
+  defaultTheme: dark # auto, dark, light
   disableThemeToggle: false
   math: true
   ShowReadingTime: true
@@ -159,6 +159,9 @@ menu:
       name: Drawing
       url: /Drawing/
       weight: 5
+    - identifier: Poems
+      name: Poems
+      url: /poems/
     #- identifier: tags
     #  name: tags
     #  url: /tags/
