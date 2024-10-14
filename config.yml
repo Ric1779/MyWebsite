@@ -86,9 +86,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
-    Content: "This is the website of **Richards Britto.** and
-    I create educational content on data science and bioinformatics.
-    Some of you may know me as the **Data Professor**."
+    Content: "This is the website of **Richards Britto.**"
 
   socialIcons:
     # - name: youtube
