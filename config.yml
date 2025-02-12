@@ -105,12 +105,7 @@ params:
     #  url: "https://www.buymeacoffee.com/dataprofessor"
 
   analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+    googlesiteVerificationTag: "Ntm4_tRynooWOpZOgDkuQ7_9pCVbme5rDzksuoSE6rc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -160,6 +155,7 @@ menu:
     - identifier: Poems
       name: Poems
       url: /poems/
+      weight: 6
     #- identifier: tags
     #  name: tags
     #  url: /tags/
