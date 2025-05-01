@@ -77,6 +77,46 @@
 		/* inline css from assets folder */
 		{{ (resources.Get "shortcode-gallery/filterbar.sass" | toCSS).Content | safeCSS }}
 	{{ end }}
+
+	/* Star rating styles */
+	.image-rating {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: rgba(0, 0, 0, 0.7);
+		padding: 2px 8px;
+		border-radius: 12px;
+		color: #ffd700;
+		font-size: 13px;
+		display: flex;
+		align-items: center;
+		gap: 2px;
+		z-index: 1;
+	}
+
+	.jg-entry {
+		position: relative;
+	}
+
+	.half-star {
+		position: relative;
+		display: inline-block;
+		color: #ffd700;
+		width: 1em;
+		overflow: hidden;
+	}
+
+	.half-star::before {
+		content: "★";
+		position: absolute;
+		width: 50%;
+		overflow: hidden;
+	}
+
+	.half-star::after {
+		content: "☆";
+	}
 </style>
 
 <!--
@@ -196,6 +236,18 @@ Ordinal: {{ .Ordinal}}
 						{{ end }}
 					>
 				</a>
+				{{ with $metadata }}
+					{{ if .Rating }}
+						<div class="image-rating">
+							{{ range (seq .Rating) }}
+								★
+							{{ end }}
+							{{ range (seq (sub 5 .Rating)) }}
+								☆
+							{{ end }}
+						</div>
+					{{ end }}
+				{{ end }}
 			</div>
 		{{ end }}
 	{{ end }}

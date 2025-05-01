@@ -1,16 +1,23 @@
 languageCode: en-us
 baseURL: "//chanin.tech/"
 title: Richards Britto
-paginate: 20
+paginate: 100
 theme: 
   - PaperMod
   - hugo-shortcode-gallery
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+# Add output formats for JSON
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # This is needed for search
 
 #googleAnalytics: UA-123-45
 
@@ -71,7 +78,7 @@ params:
     constraints and trying to function at different levels of abstraction. In this chronicle, 
     I share my expedition of learning in the domains of computer vision, CG, and deep learning."
 
-    imageUrl: "images/dp_7.png"
+    imageUrl: "images/dp_10.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Ric"
@@ -144,19 +151,26 @@ menu:
       name: Projects
       url: /projects/
       weight: 3
-    - identifier: 3D Modelling
-      name: 3D Modelling
-      url: /3D Modelling/
+    - identifier: 3D Model
+      name: 3D Model
+      url: /3D Model/
       weight: 4
     - identifier: Drawing
       name: Drawing
       url: /Drawing/
       weight: 5
+    - identifier: Movies
+      name: Movies
+      url: /Movies/
+      weight: 6
     - identifier: Poems
       name: Poems
       url: /poems/
-      weight: 6
-    #- identifier: tags
-    #  name: tags
-    #  url: /tags/
-    #  weight: 5
+      weight: 7
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 8
+    - name: Search
+      url: search/
+      weight: 9

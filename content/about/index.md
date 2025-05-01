@@ -14,7 +14,7 @@ showtoc: false
 draft: false
 ---
 
-Hello there!👋 I’m Richards, a Computer Vision enthusiast deeply passionate about exploring the exciting territories of 3D reconstruction and computer graphics. Armed with a freshly earned master’s degree in Image Analysis and Machine Learning from Uppsala University, I recenlty started my first job as an AI & 3D Production Developer at IKEA. Beyond my tech pursuits, I lead a well-rounded life as a versatile athlete. You might catch me on the field, representing the fifth division football club, IK Apollon ⚽, or dedicating myself to strength training with powerlifting, and calisthenics🏋🏽🤸🏽. 
+Hello there!👋 I’m Richards, a Computer Vision enthusiast deeply passionate about exploring the exciting territories of 3D reconstruction and computer graphics. Armed with a master’s degree in Image Analysis and Machine Learning from Uppsala University, I started my first job as an AI & 3D Production Developer at IKEA. Beyond my tech pursuits, I lead a well-rounded life as a versatile athlete. You might catch me on the field, representing the fifth division football club, IK Apollon ⚽, or dedicating myself to strength training with powerlifting, and calisthenics🏋🏽🤸🏽. 
 
 For me, the true beauty lies in sculpting both body and mind, embracing the thrill of physical feats while navigating the depths of mental challenges.  During my leisure hours, I immerse myself in philosophical discourse, often exploring the intricacies of the cosmos🛸 and delving into the fundamental truths of existence. These pursuits are not just hobbies but cherished endeavors that deeply satisfy my 'soul'. Whether I'm engrossed in philosophical discussions or captivated by thought-provoking videos on YouTube, these activities encourage me to explore boundless realms of thought and imagination.💡
 <!-- I've a passion for 3D modeling, sketching, and autonomous driving. I also proudly wield a lightning-fast typing speed of [106 WPM](https://monkeytype.com/profile/Ric1779)⚡, a skill finely honed over a century of intense focus, secluded in the sanctum of a digital temple 🧘🏽. -->
@@ -25,11 +25,7 @@ In contemplating life’s grand questions, I’ve come to believe that the only 
 
 ## Technical Skills
 
-{{< gallery match="skills/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="100" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
-
-## Vicarious Voyages
-
-{{< gallery match="movies/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="250" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
+{{< gallery match="skills/*" previewType="blur" thumbnailHoverEffect="enlarge" lastRow="nojustify" sortOrder="randomize" rowHeight="90" margins="5" lastRow="nojustify" thumbnailResizeOptions="600x600 q100 Lanczos" showExif=true  embedPreview=true loadJQuery=true >}}
 
 ## Melodies That Touch my Soul
 
