@@ -1,8 +1,12 @@
 ---
-title: "EWA Splatting Simplified"
+title: "📄 EWA Splatting"
 date: 2024-05-26T23:17:00+09:00
 slug: EWASplatting
 category: EWASplatting
+tags:
+    - Processed-Paper
+    - AI
+    - Gaussian-Splatting
 summary:
 description:
 cover: 

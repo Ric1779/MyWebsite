@@ -159,18 +159,14 @@ menu:
       name: Drawing
       url: /Drawing/
       weight: 5
-    - identifier: Movies
-      name: Movies
-      url: /Movies/
-      weight: 6
-    - identifier: Poems
-      name: Poems
-      url: /poems/
-      weight: 7
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 8
-    - name: Search
-      url: search/
-      weight: 9
+    # - identifier: Poems
+    #   name: Poems
+    #   url: /poems/
+    #   weight: 7
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 8
+    # - name: Search
+    #   url: search/
+    #   weight: 9
