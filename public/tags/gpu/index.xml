@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GPU on Richards Britto</title>
+    <link>//chanin.tech/tags/gpu/</link>
+    <description>Recent content in GPU on Richards Britto</description>
+    <image>
+      <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Jan 2026 23:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/tags/gpu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graph Convolutional Networks!</title>
+      <link>//chanin.tech/blogs/cudabasics/</link>
+      <pubDate>Fri, 02 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/cudabasics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flexicubes!</title>
+      <link>//chanin.tech/blogs/cudabasics/</link>
+      <pubDate>Thu, 01 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/cudabasics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello CUDA!</title>
+      <link>//chanin.tech/blogs/cudabasics/</link>
+      <pubDate>Thu, 01 May 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/cudabasics/</guid>
+      <description>What is CUDA and Why Should You Care? Deep learning as we know it today—whether it’s training massive language models, generating realistic images, or running complex computer vision systems—simply wouldn’t be possible without GPUs. These models often contain millions to billions of parameters, and the computational demand to train them is staggering. It’s the parallel processing power of GPUs that makes this kind of large-scale learning feasible. But to truly unlock that performance, we need tools like CUDA, which let us write code that runs natively on the GPU and harness every ounce of its capability.</description>
+    </item>
+    
+  </channel>
+</rss>

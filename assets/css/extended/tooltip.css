@@ -1,0 +1,74 @@
+.rb-tooltip {
+  position: relative;
+  display: inline-block;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  cursor: help;
+  outline: none;
+}
+
+.rb-tooltip__bubble {
+  --rb-tip-fill: color-mix(in srgb, var(--primary) 92%, transparent);
+  --rb-tip-border: color-mix(in srgb, var(--entry) 92%, transparent);
+
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: calc(100%);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--rb-tip-fill);
+  color: var(--entry);
+  border: 1px solid var(--rb-tip-border);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+  width: max-content;
+  max-width: 280px;
+  text-align: center;
+  z-index: 1000;
+  transition:
+    opacity 0.15s ease,
+    visibility 0s linear 0.15s;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rb-tooltip__bubble p {
+  margin: 0;
+}
+
+.rb-tooltip__bubble::before,
+.rb-tooltip__bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.rb-tooltip__bubble::before {
+  margin-left: -7px;
+  border-width: 7px;
+  border-color: var(--rb-tip-border) transparent transparent transparent;
+}
+
+.rb-tooltip__bubble::after {
+  margin-left: -6px;
+  border-width: 6px;
+  border-color: var(--rb-tip-fill) transparent transparent transparent;
+}
+
+.rb-tooltip:hover .rb-tooltip__bubble,
+.rb-tooltip:focus .rb-tooltip__bubble,
+.rb-tooltip:focus-within .rb-tooltip__bubble {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}

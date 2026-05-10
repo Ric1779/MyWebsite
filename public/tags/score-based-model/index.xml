@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Score-Based-Model on Richards Britto</title>
+    <link>//chanin.tech/tags/score-based-model/</link>
+    <description>Recent content in Score-Based-Model on Richards Britto</description>
+    <image>
+      <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Apr 2025 23:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/tags/score-based-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evolution of Diffusion Model</title>
+      <link>//chanin.tech/blogs/diffusionmodelevolution/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/diffusionmodelevolution/</guid>
+      <description>Introduction In the past few years, artificial intelligence (AI) has made huge progress in creating realistic images, videos, music, and even human-like voices. A big reason behind this progress is the invention of generative models. These models are designed to create new things - like pictures of people who don’t exist or completely new songs that sound like they were made by a professional artist.
+At the core of generative models is the concept of probability distributions.</description>
+    </item>
+    
+  </channel>
+</rss>

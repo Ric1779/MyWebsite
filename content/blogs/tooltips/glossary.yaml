@@ -1,0 +1,16 @@
+# Reusable tooltip definitions.
+# Reference any key from a blog post like:
+#   {{< tooltip text="CPU" id="cpu" />}}
+#
+# Multi-line entries: use the "|" block scalar.
+# Inline markdown (**bold**, *italic*, `code`, [links](url)) is rendered.
+
+cpu: |
+  The **Central Processing Unit** — fetches, decodes, and
+  executes one instruction at a time.
+
+instruction-pointer: A CPU register holding the address of the next instruction to execute. Also called the *program counter*.
+
+control-flow: Decisions about which instruction the CPU executes next (jumps, branches, calls).
+
+register: A CPU register is a tiny, ultra fast storage location inside the processor built from flip-flops, which themselves are memory circuits made from transistors. Each flip-flop stores one bit, and many grouped together form registers that temporarily hold data the CPU is actively using.

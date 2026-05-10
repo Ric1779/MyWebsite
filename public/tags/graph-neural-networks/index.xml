@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Graph-Neural-Networks on Richards Britto</title>
+    <link>//chanin.tech/tags/graph-neural-networks/</link>
+    <description>Recent content in Graph-Neural-Networks on Richards Britto</description>
+    <image>
+      <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Jan 2026 20:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/tags/graph-neural-networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Programs at the Lowest Level</title>
+      <link>//chanin.tech/blogs/inlinefunction/</link>
+      <pubDate>Sun, 04 Jan 2026 20:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/inlinefunction/</guid>
+      <description>Why Programs Felt Like Magic to Me When I was younger, programs felt less like things humans built and more like things that simply existed. You wrote some words into a file, pressed a button, and suddenly the computer did something. A game ran. A window opened. A result appeared. Somewhere in between, something invisible happened, and that “something” was never really explained. I knew, in theory, that a program was “code” and that the computer was “executing” it, but those words never formed a real mental picture.</description>
+    </item>
+    
+    <item>
+      <title>Neural Message Passing!</title>
+      <link>//chanin.tech/blogs/neuralmessagepassing/</link>
+      <pubDate>Sat, 03 Jan 2026 20:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/neuralmessagepassing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

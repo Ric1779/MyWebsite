@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gaussian-Splatting on Richards Britto</title>
+    <link>//chanin.tech/tags/gaussian-splatting/</link>
+    <description>Recent content in Gaussian-Splatting on Richards Britto</description>
+    <image>
+      <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 May 2024 23:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/tags/gaussian-splatting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📄 EWA Splatting</title>
+      <link>//chanin.tech/blogs/ewasplatting/</link>
+      <pubDate>Sun, 26 May 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/ewasplatting/</guid>
+      <description>Introduction In computer graphics and visualization, the process of rendering high-quality images from 3D data is a critical task. One method that has gained attention is &amp;ldquo;EWA Splatting,&amp;rdquo; a technique aimed at producing smooth and accurate renderings of point-based models. But what exactly is EWA Splatting, and why is it important?
+Imagine you&amp;rsquo;re trying to create a digital sculpture using thousands of tiny points to represent its surface. Simply displaying these points as they are can lead to a rough and pixelated image.</description>
+    </item>
+    
+  </channel>
+</rss>
