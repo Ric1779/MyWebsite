@@ -1,22 +1,148 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Chanin Nantasenamat</title>
+    <title>Tags on Richards Britto</title>
     <link>//chanin.tech/tags/</link>
-    <description>Recent content in Tags on Chanin Nantasenamat</description>
+    <description>Recent content in Tags on Richards Britto</description>
     <image>
       <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="//chanin.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 20:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>first</title>
-      <link>//chanin.tech/tags/first/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>AI</title>
+      <link>//chanin.tech/tags/ai/</link>
+      <pubDate>Sun, 04 Jan 2026 20:17:00 +0900</pubDate>
       
-      <guid>//chanin.tech/tags/first/</guid>
+      <guid>//chanin.tech/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph-Neural-Networks</title>
+      <link>//chanin.tech/tags/graph-neural-networks/</link>
+      <pubDate>Sun, 04 Jan 2026 20:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/graph-neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine-Learning</title>
+      <link>//chanin.tech/tags/machine-learning/</link>
+      <pubDate>Sun, 04 Jan 2026 20:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU</title>
+      <link>//chanin.tech/tags/gpu/</link>
+      <pubDate>Fri, 02 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/gpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel-Programming</title>
+      <link>//chanin.tech/tags/parallel-programming/</link>
+      <pubDate>Fri, 02 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/parallel-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ray-Tracing</title>
+      <link>//chanin.tech/tags/ray-tracing/</link>
+      <pubDate>Fri, 02 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/ray-tracing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dall-E</title>
+      <link>//chanin.tech/tags/dall-e/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/dall-e/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diffusion-Model</title>
+      <link>//chanin.tech/tags/diffusion-model/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/diffusion-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GenAI</title>
+      <link>//chanin.tech/tags/genai/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/genai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image-Generation</title>
+      <link>//chanin.tech/tags/image-generation/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/image-generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LoRA</title>
+      <link>//chanin.tech/tags/lora/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/lora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Score-Based-Model</title>
+      <link>//chanin.tech/tags/score-based-model/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/score-based-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stable-Diffusion</title>
+      <link>//chanin.tech/tags/stable-diffusion/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/stable-diffusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaussian-Splatting</title>
+      <link>//chanin.tech/tags/gaussian-splatting/</link>
+      <pubDate>Sun, 26 May 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/gaussian-splatting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Processed-Paper</title>
+      <link>//chanin.tech/tags/processed-paper/</link>
+      <pubDate>Sun, 26 May 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/tags/processed-paper/</guid>
       <description></description>
     </item>
     

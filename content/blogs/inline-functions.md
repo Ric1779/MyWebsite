@@ -68,7 +68,7 @@ Once you have that mental model, the questions change. Instead of asking, _“Ho
 
 ---
 
-As discussed in the previous section, once you strip away the abstractions, a CPU doesn’t “run a program” so much as it **moves through memory** or **steps through instruction**. Execution is not a vague process - it is a physical, mechanical progression from one memory address to the next. At the center of this process is a special register called the **instruction pointer**, sometimes known as the **program counter**. This register holds a single number: the memory address of the instruction that should be executed next. At every moment the CPU is active, it answers exactly one question:
+As discussed in the previous section, once you strip away the abstractions, a CPU doesn’t “run a program” so much as it **moves through memory** or **steps through instruction**. Execution is not a vague process - it is a physical, mechanical progression from one memory address to the next. At the center of this process is a special register called the {{< tooltip text="instruction pointer" id="instruction-pointer" >}}{{< /tooltip >}}, sometimes known as the **program counter**. This {{< tooltip text="register" id="register" >}}{{< /tooltip >}} holds a single number: the memory address of the instruction that should be executed next. At every moment the CPU is active, it answers exactly one question
 
 > What instruction should I execute right now?
 

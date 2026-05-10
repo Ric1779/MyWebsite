@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Projects on Chanin Nantasenamat</title>
+    <title>Projects on Richards Britto</title>
     <link>//chanin.tech/projects/</link>
-    <description>Recent content in Projects on Chanin Nantasenamat</description>
+    <description>Recent content in Projects on Richards Britto</description>
     <image>
       <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Apr 2022 23:15:00 +0700</lastBuildDate><atom:link href="//chanin.tech/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 May 2024 23:15:00 +0900</lastBuildDate><atom:link href="//chanin.tech/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Towards reproducible computational drug discovery</title>
-      <link>//chanin.tech/projects/reproducible-computational-drug-discovery/</link>
-      <pubDate>Wed, 06 Apr 2022 23:15:00 +0700</pubDate>
+      <title>Gaussian Splatting 🔔</title>
+      <link>//chanin.tech/projects/gs/</link>
+      <pubDate>Wed, 01 May 2024 23:15:00 +0900</pubDate>
       
-      <guid>//chanin.tech/projects/reproducible-computational-drug-discovery/</guid>
-      <description>Abstract The reproducibility of experiments has been a long standing impediment for further scientific progress. Computational methods have been instrumental in drug discovery efforts owing to its multifaceted utilization for data collection, pre-processing, analysis and inference. This article provides an in-depth coverage on the reproducibility of computational drug discovery. This review explores the following topics: (1) the current state-of-the-art on reproducible research, (2) research documentation (e.g. electronic laboratory notebook, Jupyter notebook, etc.</description>
+      <guid>//chanin.tech/projects/gs/</guid>
+      <description>Introduction Overview of Gaussian Splatting In this project, we explore Gaussian splatting, a rendering technique predominantly utilized in computer graphics and visualization. Gaussian splatting differs from traditional rendering methods by using Gaussian distributions to project geometric primitives. This approach enables the creation of images with high detail and realism, which is particularly beneficial in fields like medical imaging and scientific visualization where detail and accuracy are crucial. This project is a reimplementation of an open-source project available here.</description>
     </item>
     
     <item>
-      <title>ERpred: a web server for the prediction of subtype-specific estrogen receptor antagonists</title>
-      <link>//chanin.tech/projects/erpred/</link>
-      <pubDate>Tue, 05 Apr 2022 23:15:00 +0700</pubDate>
+      <title>Rasterization Essentials in C&#43;&#43; ⛛</title>
+      <link>//chanin.tech/projects/rasterization/</link>
+      <pubDate>Wed, 10 Apr 2024 23:15:00 +0900</pubDate>
       
-      <guid>//chanin.tech/projects/erpred/</guid>
-      <description>Abstract Estrogen receptors alpha and beta (ERα and ERβ) are responsible for breast cancer metastasis through their involvement of clinical outcomes. Estradiol and hormone replacement therapy targets both ERs, but this often leads to an increased risk of breast and endometrial cancers as well as thromboembolism. A major challenge is posed for the development of compounds possessing ER subtype specificity. Herein, we present a large-scale classification structure-activity relationship (CSAR) study of inhibitors from the ChEMBL database which consisted of an initial set of 11,618 compounds for ERα and 7,810 compounds for ERβ.</description>
+      <guid>//chanin.tech/projects/rasterization/</guid>
+      <description>Introduction Welcome to my exploration of rasterization, the unsung hero of 3D rendering! While ray tracing often steals the spotlight, rasterization quietly powers the graphics you see in most 3D applications and games today. Yet, despite its prevalence, rasterization remains shrouded in mystery for many.
+Why is this the case? Well, rasterization hails from the early days of computer graphics, a time often overshadowed by the glitz and glamour of modern technology.</description>
     </item>
     
     <item>
-      <title>Probing the origins of human acetylcholinesterase inhibition via QSAR modeling and molecular docking</title>
-      <link>//chanin.tech/projects/acetylcholinesterase/</link>
-      <pubDate>Mon, 04 Apr 2022 23:15:00 +0700</pubDate>
+      <title>SFA3D : LiDAR-Based 3D Object Detection 🚌</title>
+      <link>//chanin.tech/projects/sfa3d/</link>
+      <pubDate>Tue, 05 Mar 2024 23:15:00 +0900</pubDate>
       
-      <guid>//chanin.tech/projects/acetylcholinesterase/</guid>
-      <description>Abstract Alzheimer’s disease (AD) is a chronic neurodegenerative disease which leads to the gradual loss of neuronal cells. Several hypotheses for AD exists (e.g., cholinergic, amyloid, tau hypotheses, etc.). As per the cholinergic hypothesis, the deficiency of choline is responsible for AD; therefore, the inhibition of AChE is a lucrative therapeutic strategy for the treatment of AD. Acetylcholinesterase (AChE) is an enzyme that catalyzes the breakdown of the neurotransmitter acetylcholine that is essential for cognition and memory.</description>
+      <guid>//chanin.tech/projects/sfa3d/</guid>
+      <description>Introduction In the rapidly evolving landscape of autonomous vehicles and robotics, the demand for robust and efficient 3D object detection algorithms is more pronounced than ever. The ability to accurately perceive and interpret the surrounding environment is crucial for the safe navigation and decision-making processes of autonomous systems. In this context, the SFA3D (Super Fast and Accurate 3D object detection using LiDAR data) algorithm offers a powerful and efficient approach to 3D object detection using LiDAR data.</description>
+    </item>
+    
+    <item>
+      <title>Mobile Inverted Pendulam : Control and Dynamics 🔁</title>
+      <link>//chanin.tech/projects/mip/</link>
+      <pubDate>Tue, 20 Feb 2024 23:15:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/projects/mip/</guid>
+      <description>Introduction The Mobile Inverted Pendulum (MIP) serves as an excellent introduction in the understanding of control systems and robotics. Comprising an inverted pendulum mounted on a wheel, the MIP exemplifies an inherently unstable system that constantly seeks equilibrium. This characteristic instability necessitates the application of advanced control methodologies to ensure stability and enable precise maneuvering. This project was implemented as part of the Robotics Specialization in Coursera.
+In the broader context of robotics and automation, mastering control systems is crucial for achieving desired outcomes in various applications.</description>
+    </item>
+    
+    <item>
+      <title>Volumetric Rendering using NeRF 💡</title>
+      <link>//chanin.tech/projects/nerf/</link>
+      <pubDate>Wed, 03 Jan 2024 23:15:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/projects/nerf/</guid>
+      <description>Introduction The project delves into Neural Radiance Fields (NeRF), a cutting-edge methodology in computer graphics and computer vision. NeRF has had a significant impact in 3D scene synthesis by modeling the volumetric scene function, allowing for the creation of highly realistic and detailed virtual environments. Its ability to comprehend radiance at each point in a scene opens up new possibilities for rendering scenes with unparalleled accuracy. The motivation behind this undertaking lies in the aspiration to contribute to the forefront of 3D scene reconstruction and rendering.</description>
+    </item>
+    
+    <item>
+      <title>Monocular ORB-SLAM 📸</title>
+      <link>//chanin.tech/projects/monocular-slam/</link>
+      <pubDate>Fri, 22 Dec 2023 23:15:00 +0700</pubDate>
+      
+      <guid>//chanin.tech/projects/monocular-slam/</guid>
+      <description>Introduction In this project I implemented monocular ORB-SLAM ( Simultaneous Localization and Mapping), I leveraged MATLAB&amp;rsquo;s Computer Vision Toolbox to implement the ORB-SLAM pipeline, a powerful algorithm widely used in robotics, augmented reality, and autonomous systems. Github Link for the implementation.
+ORB-SLAM Pipeline:
+Map Initialization: The first step is to initialize a 3D map using two video frames. ORB-SLAM achieves this by triangulating 2D ORB feature correspondences, establishing a foundation for the spatial understanding of the environment.</description>
+    </item>
+    
+    <item>
+      <title>Ray Tracing Essentials in C&#43;&#43; 🔦</title>
+      <link>//chanin.tech/projects/ray-tracing/</link>
+      <pubDate>Mon, 30 Oct 2023 23:15:00 +0700</pubDate>
+      
+      <guid>//chanin.tech/projects/ray-tracing/</guid>
+      <description>Introduction The journey into the realm of ray tracing begins with a promise of simplicity and yet a powerful outcome, as Peter Shirley, a seasoned educator in graphics, distills years of teaching experience into a practical how-to guide. For someone looking to start their journey into Computer Graphics, this is the best tutorial on the internet, with easy-to-follow code structure and amazing image renders. He sets the stage by emphasizing the underlying principles, aiming to steer beginners toward a fulfilling experience of creating impressive imagery.</description>
     </item>
     
   </channel>

@@ -1,36 +1,165 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Blogs on Chanin Nantasenamat</title>
+    <title>Blogs on Richards Britto</title>
     <link>//chanin.tech/blogs/</link>
-    <description>Recent content in Blogs on Chanin Nantasenamat</description>
+    <description>Recent content in Blogs on Richards Britto</description>
     <image>
       <url>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>//chanin.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Apr 2022 23:15:00 +0700</lastBuildDate><atom:link href="//chanin.tech/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 20:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to master Streamlit for Data Science</title>
-      <link>//chanin.tech/blogs/how-to-master-streamlit-for-data-science/</link>
-      <pubDate>Fri, 08 Apr 2022 23:15:00 +0700</pubDate>
+      <title>Understanding Programs at the Lowest Level</title>
+      <link>//chanin.tech/blogs/inlinefunction/</link>
+      <pubDate>Sun, 04 Jan 2026 20:17:00 +0900</pubDate>
       
-      <guid>//chanin.tech/blogs/how-to-master-streamlit-for-data-science/</guid>
-      <description>Preview The essential Streamlit for all your data science needs To build a web app you’d typically use such Python web frameworks as Django and Flask. But the steep learning curve and the big time investment for implementing these apps present a major hurdle.
-Streamlit makes the app creation process as simple as writing Python scripts!
-In this article, you’ll learn how to master Streamlit when getting started with data science.</description>
+      <guid>//chanin.tech/blogs/inlinefunction/</guid>
+      <description>Why Programs Felt Like Magic to Me When I was younger, programs felt less like things humans built and more like things that simply existed. You wrote some words into a file, pressed a button, and suddenly the computer did something. A game ran. A window opened. A result appeared. Somewhere in between, something invisible happened, and that “something” was never really explained. I knew, in theory, that a program was “code” and that the computer was “executing” it, but those words never formed a real mental picture.</description>
     </item>
     
     <item>
-      <title>What Is Bioinformatics</title>
-      <link>//chanin.tech/blogs/what-is-bioinformatics/</link>
-      <pubDate>Sun, 03 Apr 2022 23:15:00 +0700</pubDate>
+      <title>Neural Message Passing!</title>
+      <link>//chanin.tech/blogs/neuralmessagepassing/</link>
+      <pubDate>Sat, 03 Jan 2026 20:17:00 +0900</pubDate>
       
-      <guid>//chanin.tech/blogs/what-is-bioinformatics/</guid>
-      <description>Introduction So you probably have heard of the term Bioinformatics before, but did not get the chance to learn more about what it is and what it can do.
-In this article, I will be giving you a brief high-level overview of this exciting field of Bioinformatics. Thus, the article will be comprehensible to those coming from biology or computer backgrounds alike.
-As a biologist, I have self-taught myself data science and coding (R and Python) after several years of persistence (initially quitting a couple of times the coding concept just kind of clicked at some point in time).</description>
+      <guid>//chanin.tech/blogs/neuralmessagepassing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph Convolutional Networks!</title>
+      <link>//chanin.tech/blogs/cudabasics/</link>
+      <pubDate>Fri, 02 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/cudabasics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flexicubes!</title>
+      <link>//chanin.tech/blogs/cudabasics/</link>
+      <pubDate>Thu, 01 Jan 2026 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/cudabasics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello CUDA!</title>
+      <link>//chanin.tech/blogs/cudabasics/</link>
+      <pubDate>Thu, 01 May 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/cudabasics/</guid>
+      <description>What is CUDA and Why Should You Care? Deep learning as we know it today—whether it’s training massive language models, generating realistic images, or running complex computer vision systems—simply wouldn’t be possible without GPUs. These models often contain millions to billions of parameters, and the computational demand to train them is staggering. It’s the parallel processing power of GPUs that makes this kind of large-scale learning feasible. But to truly unlock that performance, we need tools like CUDA, which let us write code that runs natively on the GPU and harness every ounce of its capability.</description>
+    </item>
+    
+    <item>
+      <title>Evolution of Diffusion Model</title>
+      <link>//chanin.tech/blogs/diffusionmodelevolution/</link>
+      <pubDate>Wed, 30 Apr 2025 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/diffusionmodelevolution/</guid>
+      <description>Introduction In the past few years, artificial intelligence (AI) has made huge progress in creating realistic images, videos, music, and even human-like voices. A big reason behind this progress is the invention of generative models. These models are designed to create new things - like pictures of people who don’t exist or completely new songs that sound like they were made by a professional artist.
+At the core of generative models is the concept of probability distributions.</description>
+    </item>
+    
+    <item>
+      <title>📄 EWA Splatting</title>
+      <link>//chanin.tech/blogs/ewasplatting/</link>
+      <pubDate>Sun, 26 May 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/ewasplatting/</guid>
+      <description>Introduction In computer graphics and visualization, the process of rendering high-quality images from 3D data is a critical task. One method that has gained attention is &amp;ldquo;EWA Splatting,&amp;rdquo; a technique aimed at producing smooth and accurate renderings of point-based models. But what exactly is EWA Splatting, and why is it important?
+Imagine you&amp;rsquo;re trying to create a digital sculpture using thousands of tiny points to represent its surface. Simply displaying these points as they are can lead to a rough and pixelated image.</description>
+    </item>
+    
+    <item>
+      <title>Levenberg-Marquardt Optimization</title>
+      <link>//chanin.tech/blogs/lm/</link>
+      <pubDate>Wed, 08 May 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/lm/</guid>
+      <description>Introduction Overview of Optimization in Computer Vision Optimization plays a crucial role in computer vision, serving as the backbone for many advanced algorithms and applications. From object recognition and image stitching to 3D reconstruction and motion tracking, optimization techniques help in refining the estimates of visual parameters to improve accuracy and performance. The essence of optimization in computer vision lies in minimizing or maximizing a function that represents an error or a likelihood measure.</description>
+    </item>
+    
+    <item>
+      <title>Overview of Graphics Pipeline 🎨</title>
+      <link>//chanin.tech/blogs/graphicspipeline/</link>
+      <pubDate>Mon, 15 Apr 2024 23:15:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/graphicspipeline/</guid>
+      <description>Introduction In computer graphics, there&amp;rsquo;s a fascinating process called the graphics pipeline. It&amp;rsquo;s like a factory assembly line, but instead of producing physical objects, it creates the stunning images we see on our screens. Let&amp;rsquo;s break it down into simpler terms.
+The graphics pipeline works by taking geometric shapes, like triangles or squares, and transforming them into pixels on our screen. Imagine starting with a bunch of dots in space, representing the corners of these shapes.</description>
+    </item>
+    
+    <item>
+      <title>Gouraud Interpolation ∿</title>
+      <link>//chanin.tech/blogs/gouraudshading/</link>
+      <pubDate>Sun, 07 Apr 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/gouraudshading/</guid>
+      <description>Introduction to Gouraud Interpolation In computer graphics, achieving realistic and visually appealing rendering is a perpetual pursuit. One critical aspect of this endeavor is the accurate representation of light and color across surfaces, known as shading. Shading techniques play a pivotal role in determining the final appearance of rendered objects and scenes.
+Among the various shading methods employed in computer graphics, Gouraud interpolation stands out as a fundamental technique for achieving smooth transitions of color and intensity across polygonal surfaces.</description>
+    </item>
+    
+    <item>
+      <title>Overview of Spherical Harmonics in Gaussian Splatting</title>
+      <link>//chanin.tech/blogs/sphericalharmonics/</link>
+      <pubDate>Fri, 05 Apr 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/sphericalharmonics/</guid>
+      <description>Introduction In the vast and ever-evolving landscape of computational mathematics and graphics, two concepts that stand out for their utility and fascinating properties are spherical harmonics and Gaussian splatting. While on the surface these topics may appear niche, they are, in fact, cornerstone techniques used across a variety of fields, from computer graphics and medical imaging to geophysics and quantum mechanics.
+Spherical Harmonics are a set of special functions defined on the surface of a sphere.</description>
+    </item>
+    
+    <item>
+      <title>Bag of Words in Loop Closure for SLAM</title>
+      <link>//chanin.tech/blogs/bow/</link>
+      <pubDate>Thu, 21 Mar 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/bow/</guid>
+      <description>Introduction Overview of Object Recognition in Images Object recognition in images is a cornerstone of computer vision, enabling computers to identify and classify objects within a digital image. This capability is fundamental to numerous applications, from autonomous vehicles navigating through the streets to facial recognition systems ensuring security and personalized experiences. At the heart of object recognition lies the challenge of representation: how can we describe an image, with all its complexity and variability, in a way that a computer can understand and analyze?</description>
+    </item>
+    
+    <item>
+      <title>Inside KITTI Dataset : Files and Formats</title>
+      <link>//chanin.tech/blogs/kitti/</link>
+      <pubDate>Sun, 10 Mar 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/kitti/</guid>
+      <description>Introduction In the field of computer vision and autonomous driving research, datasets play a significant role in advancing the capabilities of artificial intelligence systems. One such cornerstone in this domain is the KITTI dataset, a comprehensive and widely-used benchmark that has fueled numerous breakthroughs in perception, localization, and object recognition. The dataset is freely available for download at this link.
+The KITTI dataset, short for Karlsruhe Institute of Technology and Toyota Technological Institute, is a meticulously curated collection of sensor data gathered from a moving vehicle.</description>
+    </item>
+    
+    <item>
+      <title>Kalman Filter and EKF</title>
+      <link>//chanin.tech/blogs/kalmanfilter/</link>
+      <pubDate>Sun, 18 Feb 2024 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/kalmanfilter/</guid>
+      <description>Introduction In the intricate landscape of data-driven decision-making and autonomous systems, the need for accurate and reliable estimation is paramount. Whether it&amp;rsquo;s predicting the position of a spacecraft, tracking the trajectory of a missile, or simply smoothing out noisy sensor measurements in a mobile robot, the ability to filter and refine data in real-time is a fundamental requirement. This is where the Kalman Filter, a powerful and versatile tool, comes into play.</description>
+    </item>
+    
+    <item>
+      <title>ResNet 18-152 from scratch in PyTorch</title>
+      <link>//chanin.tech/blogs/resnet/</link>
+      <pubDate>Sun, 03 Sep 2023 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/resnet/</guid>
+      <description>Introduction In the ever-evolving field of deep learning, the quest for models that can accurately interpret and classify visual information has led to significant innovations. Among these, Residual Networks, or ResNets, have emerged as a cornerstone in the architecture of deep neural networks. First introduced by Kaiming He et al. in their seminal paper, &amp;ldquo;Deep Residual Learning for Image Recognition,&amp;rdquo; ResNets have revolutionized how we approach problems in computer vision by enabling the training of much deeper networks than was previously possible.</description>
+    </item>
+    
+    <item>
+      <title>Volume of Torus</title>
+      <link>//chanin.tech/blogs/torus/</link>
+      <pubDate>Fri, 01 Sep 2023 23:17:00 +0900</pubDate>
+      
+      <guid>//chanin.tech/blogs/torus/</guid>
+      <description>Introduction In mathematics, the torus stands out as a fascinating shape. This doughnut-shaped object has not only captivated mathematicians for centuries but has also found a prominent place in the modern world of computer graphics and ray-tracing. Understanding the volume of a torus is not just an academic exercise; it is a fundamental concept that bridges the gap between theoretical mathematics and practical applications in visual computing.
+A torus is a surface of revolution generated by revolving a circle in three-dimensional space around an axis coplanar with the circle.</description>
     </item>
     
   </channel>
