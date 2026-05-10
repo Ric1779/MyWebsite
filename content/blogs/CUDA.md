@@ -16,7 +16,7 @@ cover:
   caption:
   relative: true
 showtoc: true
-draft: false
+draft: true
 ---
 
 ## What is CUDA and Why Should You Care?

@@ -1,6 +1,6 @@
 .rb-tooltip {
   position: relative;
-  display: inline-block;
+  display: inline;
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--secondary);

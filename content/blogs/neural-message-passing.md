@@ -15,5 +15,5 @@ cover:
   caption:
   relative: true
 showtoc: true
-draft: false
+draft: true
 ---

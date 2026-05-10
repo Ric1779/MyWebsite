@@ -1,9 +1,1 @@
-{{- $_ := .Inner -}}{{- $text := .Get "text" -}}{{- $id := .Get "id" -}}{{- $p
-:= "content/blogs/tooltips/glossary.yaml" -}}{{- $g := readFile $p |
-transform.Unmarshal -}}{{- $c := index $g $id -}}{{- if not $c -}}{{- warnf
-"tooltip: unknown id %q %s" $id .Position -}}{{- $c = "[missing tooltip]" -}}{{-
-end -}}<span class="rb-tooltip" tabindex="0"
-  >{{ $text }}<span class="rb-tooltip__bubble" role="tooltip"
-    >{{ $c | markdownify }}</span
-  ></span
->
+{{- $_ := .Inner -}}{{- $text := .Get "text" -}}{{- $id := .Get "id" -}}{{- $p := "content/blogs/tooltips/glossary.yaml" -}}{{- $g := readFile $p | transform.Unmarshal -}}{{- $c := index $g $id -}}{{- if not $c -}}{{- warnf "tooltip: unknown id %q %s" $id .Position -}}{{- $c = "[missing tooltip]" -}}{{- end -}}{{- printf "<span class=\"rb-tooltip\" tabindex=\"0\">%s<span class=\"rb-tooltip__bubble\" role=\"tooltip\">%s</span></span>" $text ($c | markdownify) | safeHTML -}}

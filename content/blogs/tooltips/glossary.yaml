@@ -11,6 +11,8 @@ cpu: |
 
 instruction-pointer: A CPU register holding the address of the next instruction to execute. Also called the *program counter*.
 
+instruction: An instruction is a binary command that tells the CPU to perform a single operation like moving data, doing arithmetic, or changing execution flow.
+
 control-flow: Decisions about which instruction the CPU executes next (jumps, branches, calls).
 
-register: A CPU register is a tiny, ultra fast storage location inside the processor built from flip-flops, which themselves are memory circuits made from transistors. Each flip-flop stores one bit, and many grouped together form registers that temporarily hold data the CPU is actively using.
+register: A CPU register is a tiny, ultra-fast memory unit inside the processor that temporarily stores data the CPU is actively using.

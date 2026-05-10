@@ -12,48 +12,12 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Jan 2026 20:17:00 +0900</lastBuildDate><atom:link href="//chanin.tech/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Understanding Programs at the Lowest Level</title>
+      <title>Programs at the Lowest Level</title>
       <link>//chanin.tech/blogs/inlinefunction/</link>
       <pubDate>Sun, 04 Jan 2026 20:17:00 +0900</pubDate>
       
       <guid>//chanin.tech/blogs/inlinefunction/</guid>
       <description>Why Programs Felt Like Magic to Me When I was younger, programs felt less like things humans built and more like things that simply existed. You wrote some words into a file, pressed a button, and suddenly the computer did something. A game ran. A window opened. A result appeared. Somewhere in between, something invisible happened, and that “something” was never really explained. I knew, in theory, that a program was “code” and that the computer was “executing” it, but those words never formed a real mental picture.</description>
-    </item>
-    
-    <item>
-      <title>Neural Message Passing!</title>
-      <link>//chanin.tech/blogs/neuralmessagepassing/</link>
-      <pubDate>Sat, 03 Jan 2026 20:17:00 +0900</pubDate>
-      
-      <guid>//chanin.tech/blogs/neuralmessagepassing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Graph Convolutional Networks!</title>
-      <link>//chanin.tech/blogs/cudabasics/</link>
-      <pubDate>Fri, 02 Jan 2026 23:17:00 +0900</pubDate>
-      
-      <guid>//chanin.tech/blogs/cudabasics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Flexicubes!</title>
-      <link>//chanin.tech/blogs/cudabasics/</link>
-      <pubDate>Thu, 01 Jan 2026 23:17:00 +0900</pubDate>
-      
-      <guid>//chanin.tech/blogs/cudabasics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hello CUDA!</title>
-      <link>//chanin.tech/blogs/cudabasics/</link>
-      <pubDate>Thu, 01 May 2025 23:17:00 +0900</pubDate>
-      
-      <guid>//chanin.tech/blogs/cudabasics/</guid>
-      <description>What is CUDA and Why Should You Care? Deep learning as we know it today—whether it’s training massive language models, generating realistic images, or running complex computer vision systems—simply wouldn’t be possible without GPUs. These models often contain millions to billions of parameters, and the computational demand to train them is staggering. It’s the parallel processing power of GPUs that makes this kind of large-scale learning feasible. But to truly unlock that performance, we need tools like CUDA, which let us write code that runs natively on the GPU and harness every ounce of its capability.</description>
     </item>
     
     <item>
